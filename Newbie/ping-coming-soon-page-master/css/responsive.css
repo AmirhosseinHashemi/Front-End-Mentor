@@ -1,0 +1,105 @@
+@media only screen and (min-width: 36rem) {
+    .ping__social {
+        width: 30%;
+    }
+}
+
+
+
+@media only screen and (min-width: 48rem) {
+    .row {
+        justify-content: center;
+    }
+
+    .ping__social {
+        width: 25%;
+    }
+
+    .ping__email p {
+        font-size: 0.8rem;
+        margin: 0.5rem 0 0 1rem;
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 62rem) {
+    .ping__logo {
+        width: 5rem;
+    }
+
+    .ping__title {
+        font-size: 2rem;
+    }
+
+    .ping__sub-title {
+        font-size: 1rem;
+    }
+
+    .ping__form {
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .ping__email {
+        align-items: flex-start;
+        margin-right: 1rem;
+        width: 65%;
+    }
+
+    .ping__email input {
+        padding: 1rem 2rem;
+    }
+
+    .ping__email input::placeholder {
+        font-size: 1rem;
+    }
+
+    .ping__form button {
+        width: 30%;
+        padding: 1.2rem 2rem;
+        transition: all 0.3s; 
+    }
+
+    .ping__form button:hover {
+        opacity: 0.8;
+    }
+
+    .ping__social {
+        width: 20%;
+    }
+
+    .ping__link {
+        transition: all 0.3s;
+    }
+
+    .ping__link:hover {
+        background-color: var(--blue);
+    }
+
+    .ping__link:hover a {
+        color: white;
+    }
+
+    .ping__footer p {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 75rem) {
+    .ping__title {
+        font-size: 3rem;
+    }
+
+    .ping__sub-title {
+        font-size: 1.2rem;
+    }
+
+    .ping__form button {
+        font-size: 1rem;
+    }
+}

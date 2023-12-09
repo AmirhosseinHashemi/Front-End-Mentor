@@ -1,0 +1,40 @@
+@media only screen and (min-width: 768px) {
+
+    /* grid */
+    .col,
+    .col-6 {
+        padding: 0;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    /* customize */
+    .card {
+        padding: 2rem;
+    }
+
+
+    /* community */
+    .community {
+        box-shadow: 0 0.3rem 0.7rem 0 rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* subscribe */
+    .subscribe {
+        height: 100%;
+        border-radius: 0 0 0 0.5rem;
+    }
+
+    .subscribe__btn {
+        padding: 1rem;
+        font-size: 1.125rem;
+    }
+
+    /* whyus */
+    .whyus {
+        border-radius: 0 0 0.5rem 0;
+    }
+}

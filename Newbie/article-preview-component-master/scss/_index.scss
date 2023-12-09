@@ -1,0 +1,208 @@
+.wrapper {
+    min-width: 20rem;
+    max-width: 20rem;
+    box-shadow: 0 1rem 2rem 0 $shadowColor;
+    margin: 4rem 0;
+
+    //responsive
+    @include desktop() {
+        max-width: 40rem;
+    }
+}
+
+.card {
+
+    //responsive
+    @include desktop() {
+        display: flex;
+    }
+}
+
+//image
+.card__image-container {
+    display: flex;
+
+    img {
+        width: 20rem;
+        height: 13.125rem;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 0.5rem 0.5rem 0 0;
+
+        //responsive
+        @include desktop() {
+            width: 16rem;
+            height: auto;
+            object-position: left;
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+    }
+}
+
+//body
+.card__body {
+    background-color: white;
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    h1 {
+        font-family: $ff-mainBold;
+        font-size: 1rem;
+        color: $veryDarkGrayishBlue;
+        margin: 0 0 1rem 0;
+    }
+
+    p {
+        font-family: $ff-mainMedium;
+        font-size: 0.8125rem;
+        color: $desaturatedDarkBlue;
+    }
+
+    //responsive
+    @include desktop() {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+}
+
+//footer
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+}
+
+.card__author {
+    font-family: $ff-mainBold;
+    font-size: 0.8125rem;
+    color: $veryDarkGrayishBlue;
+}
+
+.card__date {
+    font-family: $ff-mainMedium;
+    font-size: 0.8125rem;
+    color: $grayishBlue;
+}
+
+.card__button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+}
+
+//active button and menu
+.card__button--active {
+    z-index: 1;
+    background-color: $desaturatedDarkBlue;
+
+    svg {
+        path {
+            fill: $lightGrayishBlue;
+        }
+    }
+}
+
+.card__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: -1rem;
+    left: -2rem;
+    bottom: -1rem;
+    right: -2rem;
+    background-color: $veryDarkGrayishBlue;
+    border-radius: 0 0 0.5rem 0.5rem;
+    overflow: hidden;
+    animation: enter 1s ease;
+    display: none;
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin-left: 2rem;
+    }
+
+    //responsive
+    @include desktop() {
+        top: -5rem;
+        left: 11.5rem;
+        bottom: 4rem;
+        right: -6rem;
+        border-radius: 0.5rem;
+        animation: enterDesktop 1s ease;
+        overflow: visible;
+    }
+}
+
+.card__overlay--active {
+    display: flex;
+}
+
+.card__social {
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.4rem;
+}
+
+.card__social--text {
+    font-family: $ff-mainMedium;
+    font-size: 0.8125rem;
+    color: $grayishBlue;
+    letter-spacing: 0.3rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.card__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.card__arrow {
+    @include desktop() {
+        width: 1rem;
+        height: 1rem;
+        background-color: $veryDarkGrayishBlue;
+        position: absolute;
+        bottom: -0.25rem;
+        left: 48%;
+        transform: rotate(45deg);
+    }
+}

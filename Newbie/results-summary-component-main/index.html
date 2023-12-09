@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <!-- css links -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="app">
+
+        <!-- result section -->
+        <section class="result">
+          <h1 class="result__title font-medium">Your Resault</h1>
+
+          <div class="result__score">
+            <p class="font-ex-bold">76</p>
+            <span class="font-medium">of 100</span>
+          </div>
+
+          <h2 class="result__describe font-bold">Great</h2>
+          <p class="result__caption font-medium">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+
+
+        <!-- summary section -->
+        <section class="summary">
+          <h2 class="summary__title font-bold">Summary</h2>
+
+          <!-- reaction att -->
+          <div class="summary__attribute">
+            <div class="summary__att-name summary__att-name--reaction">
+              <img src="./images/icon-reaction.svg" alt="reaction icon">
+              <p class="font-bold">Reaction</p>
+            </div>
+
+            <div class="summary__score">
+              <p class="font-ex-bold">80</p>
+              <span class="font-ex-bold">/ 100</span>
+            </div>
+          </div>
+
+          <!-- memory att -->
+          <div class="summary__attribute">
+            <div class="summary__att-name summary__att-name--memory">
+              <img src="./images/icon-memory.svg" alt="memory icon">
+              <p class="font-bold">Memory</p>
+            </div>
+
+            <div class="summary__score">
+              <p class="font-ex-bold">92</p>
+              <span class="font-ex-bold">/ 100</span>
+            </div>
+          </div>
+
+          <!-- verbal att -->
+          <div class="summary__attribute">
+            <div class="summary__att-name summary__att-name--verbal">
+              <img src="./images/icon-verbal.svg" alt="verbal icon">
+              <p class="font-bold">Verbal</p>
+            </div>
+
+            <div class="summary__score">
+              <p class="font-ex-bold">61</p>
+              <span class="font-ex-bold">/ 100</span>
+            </div>
+          </div>
+
+          <!-- visual att -->
+          <div class="summary__attribute">
+            <div class="summary__att-name summary__att-name--visual">
+              <img src="./images/icon-visual.svg" alt="visual icon">
+              <p class="font-bold">Visual</p>
+            </div>
+
+            <div class="summary__score">
+              <p class="font-ex-bold">72</p>
+              <span class="font-ex-bold">/ 100</span>
+            </div>
+          </div>
+
+          <button class="summary__btn font-medium">Continue</button>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+
+  <!-- js scripts -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

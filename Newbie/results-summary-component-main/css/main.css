@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url(../fonts/static/HankenGrotesk-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url(../fonts/static/HankenGrotesk-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url(../fonts/static/HankenGrotesk-Medium.ttf) format("truetype");
+}
+.font-medium {
+  font-family: "HankenGrotesk";
+  font-weight: 500;
+}
+
+.font-bold {
+  font-family: "HankenGrotesk";
+  font-weight: 700;
+}
+
+.font-ex-bold {
+  font-family: "HankenGrotesk";
+  font-weight: 800;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 48rem) {
+  .container {
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem 0 hsl(221, 100%, 96%);
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 18.75rem;
+}
+@media only screen and (min-width: 48rem) {
+  .app {
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 38rem;
+  }
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 2rem 2rem;
+  width: 100%;
+}
+.result__title {
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+.result__describe {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.result__caption {
+  color: hsl(241, 100%, 89%);
+  font-size: 0.95rem;
+  margin: 1rem 3rem 2.5rem 3rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+@media only screen and (min-width: 48rem) {
+  .result {
+    border-radius: 2rem;
+    z-index: 1;
+    margin-right: -1.5rem;
+  }
+}
+
+.result__score {
+  background-image: radial-gradient(circle at top, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  padding: 1.5rem 2.5rem;
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+.result__score p {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.3rem;
+}
+.result__score span {
+  font-size: 1rem;
+  color: hsl(241, 100%, 89%);
+  opacity: 0.6;
+}
+
+.summary {
+  padding: 1.5rem;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+.summary__title {
+  font-size: 1.2rem;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1.5rem;
+}
+@media only screen and (min-width: 48rem) {
+  .summary {
+    border-radius: 0 2rem 2rem 0;
+    padding: 2rem 2rem 2rem 3.5rem;
+  }
+}
+
+.summary__attribute {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(221, 100%, 96%);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.summary__att-name {
+  display: flex;
+  align-items: center;
+}
+.summary__att-name p {
+  margin-left: 0.7rem;
+}
+
+.summary__score {
+  display: flex;
+  align-items: center;
+}
+.summary__score p {
+  margin-right: 0.3rem;
+  opacity: 0.9;
+}
+.summary__score span {
+  color: hsl(224, 30%, 27%);
+  opacity: 0.5;
+}
+
+.summary__att-name--reaction p {
+  color: hsl(0, 100%, 67%);
+}
+
+.summary__att-name--memory p {
+  color: hsl(39, 100%, 56%);
+}
+
+.summary__att-name--verbal p {
+  color: hsl(166, 100%, 37%);
+}
+
+.summary__att-name--visual p {
+  color: hsl(234, 85%, 45%);
+}
+
+.summary__btn {
+  width: 100%;
+  text-align: center;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 1.2rem 1rem;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in;
+}
+@media only screen and (min-width: 48rem) {
+  .summary__btn {
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 64.063rem) {
+  .summary__btn {
+    cursor: pointer;
+  }
+  .summary__btn:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HankenGrotesk";
+  min-height: 100vh;
+}
+@media only screen and (min-width: 48rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

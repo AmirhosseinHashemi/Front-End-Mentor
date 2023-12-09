@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "JosefinSans-light";
+  src: url(../fonts/static/JosefinSans-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "JosefinSans-regular";
+  src: url(../fonts/static/JosefinSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "JosefinSans-semibold";
+  src: url(../fonts/static/JosefinSans-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+.wrapper {
+  max-width: 36rem;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+@media only screen and (min-width: 64rem) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    position: relative;
+  }
+}
+
+.header {
+  padding: 0 2rem;
+  margin: 2rem 0;
+}
+@media only screen and (min-width: 64rem) {
+  .header {
+    position: absolute;
+    width: 50%;
+    padding: 0 8rem;
+    margin-top: 3rem;
+  }
+}
+
+.header__logo img {
+  width: 7rem;
+}
+@media only screen and (min-width: 64rem) {
+  .header__logo img {
+    width: 9rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    background: url(../images/bg-pattern-desktop.svg) no-repeat left;
+  }
+}
+@media only screen and (min-width: 160rem) {
+  .main {
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .image {
+    width: 40%;
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .image {
+    width: 45%;
+  }
+}
+
+.image__container {
+  min-width: 18.75rem;
+  max-width: 48rem;
+}
+@media only screen and (min-width: 64rem) {
+  .image__container {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+.image__container img {
+  width: 100%;
+}
+@media only screen and (min-width: 64rem) {
+  .image__container img {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 160rem) {
+  .image__container img {
+    object-fit: contain;
+    object-position: right;
+  }
+}
+
+.content {
+  text-align: center;
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 64rem) {
+  .content {
+    width: 60%;
+    text-align: left;
+    padding: 0 8rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .content {
+    width: 55%;
+  }
+}
+
+.content__title {
+  font-family: "JosefinSans-semibold";
+  font-weight: 600;
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 1.5rem 0;
+  letter-spacing: 0.5rem;
+  color: hsl(0, 6%, 24%);
+}
+.content__title--special {
+  font-family: "JosefinSans-light";
+  font-weight: 300;
+  color: hsl(0, 6%, 24%);
+  opacity: 0.5;
+}
+@media only screen and (min-width: 64rem) {
+  .content__title {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  .content__title {
+    font-size: 3.5rem;
+  }
+}
+
+.content__caption {
+  font-family: "JosefinSans-regular";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: hsl(0, 6%, 24%);
+  opacity: 0.5;
+}
+
+.content__form {
+  margin: 2rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content__group {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.content__input {
+  width: 100%;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 2rem;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  opacity: 0.5;
+}
+.content__input:focus {
+  outline: 0.063rem solid hsl(0, 6%, 24%);
+}
+.content__input--invalid {
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 5rem top 0.7rem;
+  outline: 0.125rem solid hsl(0, 93%, 68%);
+  opacity: 1;
+}
+@media only screen and (min-width: 64rem) {
+  .content__input--invalid {
+    background-position: right 7rem top 0.7rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .content__input {
+    padding: 0.9rem 1.5rem;
+  }
+}
+
+.content__input::placeholder {
+  font-family: "JosefinSans-regular";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: hsl(0, 6%, 24%);
+  opacity: 0.5;
+}
+
+.content__btn {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 0.8rem 0 hsla(0, 93%, 68%, 0.3);
+  transition: all 0.5s;
+}
+.content__btn:focus {
+  outline: 0.063rem solid hsl(0, 6%, 24%);
+}
+@media only screen and (min-width: 64rem) {
+  .content__btn {
+    padding: 0.8rem 2.5rem;
+  }
+  .content__btn:hover {
+    background-image: linear-gradient(135deg, hsla(0, 80%, 86%, 0.5), hsla(0, 74%, 74%, 0.4));
+    right: -0.5rem;
+  }
+}
+
+.content__errormsg {
+  font-family: "JosefinSans-regular";
+  font-weight: 400;
+  color: hsl(0, 93%, 68%);
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0 1rem;
+  display: block;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */

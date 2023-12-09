@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="interactive-rating-component">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <!-- start main page -->
+      <section class="card">
+        <figure class="card__star-icon">
+          <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+              fill="#FC7614" />
+          </svg>
+        </figure>
+
+        <h1 class="card__title">How did we do?</h1>
+        <p class="card__caption"> Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+
+        <form action="#" method="post" name="form" class="card__form">
+
+          <fieldset>
+            <div class="card__rate">
+              <label for="rate-1" class="card__label">1</label>
+              <input type="radio" name="rate" id="rate-1" value="1" class="card__input">
+            </div>
+
+            <div class="card__rate">
+              <label for="rate-2" class="card__label">2</label>
+              <input type="radio" name="rate" id="rate-2" value="2" class="card__input">
+            </div>
+
+            <div class="card__rate">
+              <label for="rate-3" class="card__label">3</label>
+              <input type="radio" name="rate" id="rate-3" value="3" class="card__input">
+            </div>
+
+            <div class="card__rate">
+              <label for="rate-4" class="card__label">4</label>
+              <input type="radio" name="rate" id="rate-4" value="4" class="card__input">
+            </div>
+
+            <div class="card__rate">
+              <label for="rate-5" class="card__label">5</label>
+              <input type="radio" name="rate" id="rate-5" value="5" class="card__input">
+            </div>
+          </fieldset>
+          <button class="card__button" type="submit">SUBMIT</button>
+
+        </form>
+      </section>
+      <!-- end main page -->
+
+      <!-- start thank page -->
+      <section class="thank">
+        <figure class="thank__icon">
+          <img src="./images/illustration-thank-you.svg" alt="thank you image">
+        </figure>
+
+        <p class="thank__selected-rate">You selected <span>4</span> out of 5</p>
+        <h2 class="thank__title">Thank you!</h2>
+        <p class="thank__caption"> We appreciate you taking the time to give a rating. If you ever need more
+          support,
+          don’t hesitate to get in touch!</p>
+      </section>
+      <!-- end thank page -->
+    </main>
+  </div>
+
+  <script src="script/script.js" defer></script>
+</body>
+
+</html>

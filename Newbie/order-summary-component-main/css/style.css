@@ -1,0 +1,126 @@
+.card {
+    width: 350px;
+    /* height: 500px; */
+    background-color: white;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* header */
+.card__header {
+    position: relative;
+    width: 350px;
+    height: 195px;
+}
+
+.card__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px 17px 0 0;
+}
+
+/* title */
+.card__title {
+    text-transform: capitalize;
+    font-size: 22px;
+    margin: 25px 0 15px 0;
+    text-align: center;
+}
+
+/* caption */
+.card__caption {
+    text-align: center;
+    width: 75%;
+    color: var(--desaturated-blue);
+    line-height: 25px;
+    font-size: 14px;
+}
+
+/* music box */
+.card__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    margin: 15px 0 20px 0;
+    width: 80%;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.card__track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__track-icon {
+    width: 35px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.card__track-info h2 {
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.card__track-info span {
+    color: var(--desaturated-blue);
+    font-size: 13px;
+}
+
+.card__change {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--bright-blue);
+    transition: all 0.3s;
+}
+
+/* buttons section */
+.card__btn {
+    width: 80%;
+    border: none;
+    outline: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card__btn--ok {
+    background-color: var(--bright-blue);
+    padding: 13px 0;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 14px 7px hsl(245deg 100% 91%);
+}
+
+.card__btn--cancel {
+    background-color: white;
+    margin-bottom: 35px;
+    color: var(--desaturated-blue);
+}
+
+/* active state */
+.card__change:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.card__btn--ok:hover {
+    opacity: 0.7;
+}
+
+.card__btn--cancel:hover {
+    color: var(--dark-blue);
+}

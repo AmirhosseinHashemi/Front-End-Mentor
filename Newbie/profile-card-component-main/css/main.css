@@ -1,0 +1,108 @@
+body {
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-position: -800px -500px , 180px 200px;
+    background-repeat: no-repeat;
+}
+
+/**************** card ******************/
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/************** card-header *************/
+.card__header {
+    position: relative;
+    width: 370px;
+    height: 140px;
+}
+
+.card__header img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/************** card-body ***************/
+.card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 370px;
+    border-bottom: 1px solid var( --dark-gray);
+}
+
+.card__photo {
+    z-index: 1;
+    margin-top: -55px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card__name {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.card__name span {
+    color: var(--dark-gray);
+    margin-left: 4px;
+    font-size: 18px;
+}
+
+.card__country {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--dark-gray);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+/************** card-footer ************/
+.card__footer {
+    background-color: white;
+    width: 370px;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+}
+
+.card__list {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card__item {
+    text-align: center;
+    color: var(--very-dark-desaturated-blue);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__item span {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--dark-gray);
+    letter-spacing: 1px;
+}

@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+body {
+    background-color: var(--light-gray);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* main */
+.main {
+    margin: 3.125rem 0;
+}
+
+
+/* community */
+.community {
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.community__title {
+    color: var(--cyan);
+}
+
+.community__title-1 {
+    margin: 1.25rem 0;
+    font-size: 1rem;
+    font-family: "Karla";
+    font-weight: 700;
+    color: var(--bright-yellow);
+}
+
+.community__caption {
+    line-height: 1.8rem;
+    color: var(--grayish-blue);
+}
+
+
+/* subscribe */
+.subscribe {
+    background-color: var(--cyan);
+}
+
+.subscribe__title {
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.subscribe__price {
+    font-size: 2rem;
+    font-family: "Karla";
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe__price span {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    color: var(--light-gray);
+    opacity: 0.5;
+}
+
+.subscribe__caption {
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.subscribe__btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    background-color: var(--bright-yellow);
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: "Karla";
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* whyus */
+.whyus {
+    background-color: var(--grayish-blue);
+    border-radius: 0 0 0.5rem 0.5rem ;
+}
+
+.whyus__title {
+    color: white;
+}
+
+.whyus__list {
+    list-style-type: none;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+
+.whyus__item {
+    color: var(--light-gray);
+}

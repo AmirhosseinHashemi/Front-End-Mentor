@@ -1,0 +1,201 @@
+.wrapper {
+    min-width: 18.75rem;
+    max-width: 36rem;
+
+    //responsive
+    @include desktop() {
+        max-width: 64rem;
+    }
+}
+
+.main {
+    padding: 0 1.5rem;
+
+    //responsive
+    @include desktop() {
+        padding: 2rem
+    }
+}
+
+
+//intro section
+.intro {
+    @include displayFlex(column, center, center);
+
+    //responsive
+    @include desktop() {
+        @include displayFlex(row, center, center);
+    }
+}
+
+.intro__explanation {
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+
+    //responsive
+    @include desktop() {
+        text-align: left;
+        width: 35%;
+    }
+
+    h1 {
+        @include fontDetails(2.5rem, $fw-bold, $veryDarkMagenta) {
+            line-height: 0.8;
+        }
+    }
+
+    p {
+        @include fontDetails(1rem, $fw-medium, $darkGrayishMagenta) {
+            line-height: 1.3;
+        }
+    }
+}
+
+
+
+.intro__ratelist {
+    @include displayFlex(column, center, center);
+    width: 100%;
+
+    //responsive
+    @include desktop() {
+        @include displayFlex(column, center, flex-end);
+        width: 65%;
+    }
+}
+
+.intro__rate {
+    width: 100%;
+    background-color: $lightGrayishMagenta;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+
+    //responsive
+    @include desktop() {
+        width: 60%;
+    }
+}
+
+.intro__rate-first {
+
+    //responsive
+    @include desktop() {
+        margin-right: 4rem;
+    }
+}
+
+.intro__rate-second {
+
+    //responsive
+    @include desktop() {
+        margin-right: 2rem;
+    }
+}
+
+.intro__rate-container {
+    @include displayFlex(column, center, center);
+    padding: 0.8rem;
+
+    //responsive
+    @include desktop() {
+        @include displayFlex(row, center, center);
+        padding: 1rem 0;
+    }
+}
+
+.intro__stars {
+    margin-bottom: 0.25rem;
+
+    //responsive
+    @include desktop() {
+        margin: 0 1.5rem 0 0;
+    }
+
+    img {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.intro__rate-caption {
+    @include fontDetails(1rem, $fw-bold, $veryDarkMagenta);
+}
+
+
+// customers
+.customer {
+    @include displayFlex(column, center, center);
+    margin: 2rem 0 4rem 0;
+
+    //responsive
+    @include desktop() {
+        @include displayFlex(row, center, flex-start);
+    }
+}
+
+.customer__comment {
+    @include displayFlex(column, center, flex-start);
+    background-color: $veryDarkMagenta;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+    height: 15rem
+}
+
+.customer__comment-first {
+
+    //responsive
+    @include desktop() {
+        margin: 0 2rem 0 0;
+    }
+}
+
+.customer__comment-second {
+
+    //responsive
+    @include desktop() {
+        margin: 1rem 2rem 0 0;
+    }
+}
+
+.customer__comment-third {
+
+    //responsive
+    @include desktop() {
+        margin: 2rem 0 0 0;
+    }
+}
+
+.customer__info {
+    @include displayFlex(row, flex-start, center);
+    margin-bottom: 1.3rem;
+}
+
+.customer__image {
+    img {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.customer__id {
+
+    @include displayFlex(column, center, center);
+    margin-left: 1.5rem;
+
+    & :first-child {
+        @include fontDetails(1rem, $fw-bold, $white);
+    }
+
+    & :nth-child(2) {
+        @include fontDetails(1rem, $fw-regular, $softPink);
+    }
+
+}
+
+.customer__text {
+    @include fontDetails(1rem, $fw-medium, $white) {
+        line-height: 1.3;
+    }
+}

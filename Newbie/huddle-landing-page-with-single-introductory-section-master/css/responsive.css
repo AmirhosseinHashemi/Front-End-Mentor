@@ -1,0 +1,126 @@
+@media only screen and (min-width: 425px) {
+    body {
+        background: var(--violet);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: var(--violet) url(../images/bg-desktop.svg);
+    }
+
+    /**************** main **************/
+    .right-section {
+        align-items: flex-start;
+        text-align: left;
+        margin: 0;
+    }
+
+    .right-section__title {
+        font-size: 1.3rem;
+    }
+
+    .right-section__caption {
+        font-size: 0.875rem;
+    }
+
+    .right-section__btn {
+        padding: 0.75rem 2.375rem;
+    }
+
+    /**************** footer **************/
+    .footer {
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        padding: 50px;
+    }
+
+    /* header */
+    .header__logo {
+        width: 10rem;
+    }
+
+    /* main */
+    .right-section__title {
+        font-size: 2rem;
+    }
+
+    .right-section__caption {
+        font-size: 1rem;
+    }
+
+    .right-section__btn {
+        padding: 0.7rem 2.8rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    .right-section__btn:hover {
+        background-color: var(--soft-magenta);
+        color: var(--white);
+        transition: all 0.5s;
+    }
+
+    /* footer */
+    .footer__item {
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .footer__item:hover .footer__link {
+        color: var(--soft-magenta);
+        transition: all 0.5s;
+
+    }
+
+    .footer__item:hover {
+        border-color: var(--soft-magenta);
+        transition: all 0.5s;
+
+    }
+
+    .footer__link {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    /* header */
+    .header__logo {
+        width: 12rem;
+    }
+
+    /* main */
+    .right-section__title {
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+    }
+
+    .right-section__caption {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .right-section__btn {
+        padding: 0.9rem 3.5rem;
+        font-size: 1rem;
+    }
+
+    /* footer */
+    .footer__item {
+        padding: 0.6rem;
+    }
+
+    .footer__link {
+        font-size: 1.2rem;
+    }
+
+}

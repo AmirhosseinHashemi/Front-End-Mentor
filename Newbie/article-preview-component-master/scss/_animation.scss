@@ -1,0 +1,19 @@
+@keyframes enter {
+    0% {
+        left: 18rem;
+    }
+
+    100% {
+        left: -2rem;
+    }
+}
+
+@keyframes enterDesktop {
+    0% {
+        left: 18rem;
+    }
+
+    100% {
+        left: 11.5rem;
+    }
+}

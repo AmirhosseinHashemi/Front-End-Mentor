@@ -1,0 +1,19 @@
+// this mixins use for responsive element 
+@mixin tablet-responsive() {
+    @media only screen and (min-width: 48rem) {
+        @content;
+    }
+}
+
+@mixin desktop-responsive() {
+    @media only screen and (min-width: 64.063rem) {
+        @content;
+    }
+}
+
+// for create specific responsive size
+@mixin responsive($minWidth, $maxWidth) {
+    @media only screen and (min-width: $minWidth) and (max-width: $maxWidth) {
+        @content;
+    }
+}

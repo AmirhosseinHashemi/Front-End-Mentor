@@ -1,0 +1,36 @@
+@import "./font";
+@import "./color";
+@import "./responsive";
+@import "./typography";
+@import "./index";
+
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "HankenGrotesk";
+    min-height: 100vh;
+
+    //responsive
+    @include tablet-responsive() {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) {
+    /* layout */
+    .container {
+        flex-direction: row;
+        min-width: 760px;
+        max-width: 900px;
+        align-items: stretch;
+    }
+
+    /* card */
+    .card__caption {
+        margin-bottom: 90px;
+    }
+
+    .card__btn:hover {
+        transition: all 0.5s;
+        background-color: transparent;
+        color: var(--light-gray);
+    }
+
+    /* cards with seperated style */
+    .card--sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card--luxury {
+        border-radius: 0 10px 10px 0;
+    }
+}

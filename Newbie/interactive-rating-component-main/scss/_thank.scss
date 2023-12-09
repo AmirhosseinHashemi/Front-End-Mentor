@@ -1,0 +1,46 @@
+.thank {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $darkBlue;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    //responsive
+    @include tablet() {
+        padding: 1.8rem;
+    }
+}
+
+.thank__icon {
+    margin: 1rem 0 1.5rem 0;
+
+    img {
+        width: 10rem;
+        height: 6.25rem;
+    }
+}
+
+.thank__selected-rate {
+    background-color: $bgDarkBlue;
+    color: $orange;
+    font-size: 0.9rem;
+    font-family: $ff-mainRegular;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+}
+
+.thank__title {
+    font-size: 1.5rem;
+    font-family: $ff-mainBold;
+    color: $white;
+    margin: 2rem 0 0 0;
+}
+
+.thank__caption {
+    font-size: 0.9rem;
+    font-family: $ff-mainRegular;
+    color: $lightGray;
+    text-align: center;
+}

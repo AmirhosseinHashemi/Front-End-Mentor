@@ -1,0 +1,19 @@
+// add font link
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+//font family
+$ff-main: 'League Spartan', sans-serif;
+
+
+//font wights
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+
+@mixin fontDetails($fontSize, $fontWeight, $color) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+    @content;
+}

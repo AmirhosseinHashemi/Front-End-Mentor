@@ -1,0 +1,12 @@
+
+@media only screen and (min-width: 576px) {
+    body {
+        background-position: -670px -550px , 350px 250px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-position: -400px -500px , 700px 200px;
+    }
+}

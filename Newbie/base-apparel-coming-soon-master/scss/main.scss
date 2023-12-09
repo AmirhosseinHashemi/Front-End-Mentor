@@ -1,0 +1,25 @@
+@import "./fonts";
+@import "./typography";
+@import "./color";
+@import "./responsive";
+@import "./index";
+
+
+
+//reset default style
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+//body
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,24 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+/* custom style - To avoid repeated code */
+.card {
+    min-width: 18.75rem;
+    padding: 1.5rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-family: "Karla";
+    font-weight: 700;
+}
+
+.card__caption {
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 1rem;
+}

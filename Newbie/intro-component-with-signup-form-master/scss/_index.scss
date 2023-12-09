@@ -1,0 +1,195 @@
+.wrapper {
+    padding: 1.5rem;
+    min-width: 18.75rem;
+    max-width: 23.438rem;
+
+    //responsive
+    @include desktop() {
+        max-width: 90rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.content {
+    margin-top: 3rem;
+
+    //responsive
+    @include desktop() {
+        width: 30%;
+        margin-right: 1rem;
+    }
+
+    article {
+        text-align: center;
+
+        //responsive
+        @include desktop() {
+            text-align: left;
+        }
+    }
+
+    &__title {
+        font-family: $ff-bold;
+        color: white;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    &__caption {
+        font-family: $ff-regular;
+        color: white;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //responsive
+    @include desktop() {
+        width: 40%;
+        margin-left: 2rem;
+        align-items: stretch;
+    }
+}
+
+.register__info {
+    text-align: center;
+    background-color: $blue;
+    color: white;
+    padding: 1.3rem 0;
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, 0.2);
+
+    //responsive
+    @include desktop() {
+        padding: 1.3rem 1rem;
+    }
+
+    p {
+        font-family: $ff-regular;
+        color: white;
+        font-size: 1rem;
+        width: 60%;
+        margin: 0 auto;
+
+        //responsive
+        @include desktop() {
+            width: 100%;
+        }
+
+        span {
+            font-family: $ff-bold;
+            color: white;
+        }
+    }
+}
+
+.register__form {
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, 0.2);
+
+    //responsive
+    @include desktop() {
+        padding: 2rem;
+    }
+
+    fieldset {
+        padding: 0;
+        border: none;
+    }
+}
+
+.register__input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    input {
+        width: 100%;
+        padding: 1rem;
+        border: 0.063rem solid $grayishBlue;
+        border-radius: 0.25rem;
+
+        &::placeholder {
+            font-family: $ff-medium;
+            font-size: 0.9rem;
+        }
+
+        &:focus {
+            border: 0.063rem solid $darkBlue;
+        }
+
+        &:enabled {
+            font-family: $ff-medium;
+            font-size: 0.9rem;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0.7rem;
+        right: 0.5rem;
+        display: none;
+    }
+
+    p {
+        font-size: 0.7rem;
+        font-family: $ff-regular;
+        text-align: right;
+        color: $red;
+        margin-bottom: 1rem;
+        margin-top: 0.3rem;
+        display: none;
+    }
+}
+
+.register__button {
+    width: 100%;
+    font-size: 1rem;
+    font-family: $ff-medium;
+    color: white;
+    background-color: $green;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.2rem 0 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+    &:focus {
+        border: 0.063rem solid $darkBlue;
+        box-shadow: none;
+    }
+}
+
+.register__rules {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-family: $ff-regular;
+    width: 90%;
+    color: $grayishBlue;
+    line-height: 1.8;
+
+    a {
+        text-decoration: none;
+        font-family: $ff-bold;
+        color: $red;
+
+        &:focus {
+            border: 0.063rem solid $darkBlue;
+            padding: 0 0.5rem;
+        }
+    }
+}

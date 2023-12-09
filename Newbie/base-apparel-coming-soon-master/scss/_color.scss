@@ -1,0 +1,19 @@
+//primary
+$desaturatedRed: hsl(0, 36%, 70%);
+$softRed: hsl(0, 93%, 68%);
+
+//neutral
+$darkGrayishRed: hsl(0, 6%, 24%);
+
+//gradient
+$gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradient1: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+//text color
+@mixin mainTextColor() {
+    color: $darkGrayishRed;
+    opacity: 0.5;
+}
+
+//btn hover color
+$btnHover: linear-gradient(135deg, hsla(0, 80%, 86%, 0.5), hsla(0, 74%, 74%, 0.4));

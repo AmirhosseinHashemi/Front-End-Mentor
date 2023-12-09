@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="sign up form">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- js link -->
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <main class="wrapper">
+
+    <section class="content" aria-label="explain about page content">
+      <article>
+        <h1 class="content__title">Learn to code by watching others</h1>
+        <p class="content__caption">See how experienced developers solve problems in real-time.
+          Watching scripted tutorials is great, but understanding how developers think is invaluable.
+        </p>
+      </article>
+    </section>
+
+    <section class="register" aria-label="register info and sign up form ">
+      <div class="register__info" aria-label="register information">
+        <p>
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form action="#" method="post" name="form" class="register__form">
+
+        <fieldset>
+          <!-- we use aria-describedby attribute to assosiate input with error message -->
+          <!-- we use aria-label attribute for inputs because we do not use <label> tag -->
+          <!-- empty alt says to screen readers it is a decorative image -->
+
+          <div class="register__input-group register__input-group--firstName">
+            <input class="register__input" type="text" name="firstName" id="firstName" placeholder="First Name" aria-label="first name"
+              aria-describedby="firstNameError" required>
+            <img id="firstNameIconError" src="./images/icon-error.svg" alt="">
+            <p role="alert" id="firstNameError"><i>First Name can not be empty</i></p>
+          </div>
+
+
+          <div class="register__input-group register__input-group--lastName">
+            <input class="register__input" type="text" name="lastName" id="lastName" placeholder="last Name"
+              aria-label="last name" aria-describedby="lastNameError" required>
+            <img id="lastNameIconError" src="./images/icon-error.svg" alt="">
+            <p role="alert" id="lastNameError"><i>Last Name can not be empty</i></p>
+          </div>
+
+          <div class="register__input-group register__input-group--email">
+            <input class="register__input" type="email" name="email" id="email" placeholder="Email Address"
+              aria-label="email address" aria-describedby="emailError" required>
+            <img id="emailIconError" src="./images/icon-error.svg" alt="">
+            <p role="alert" id="emailError"><i>Look like this is not an email</i></p>
+          </div>
+
+          <div class="register__input-group register__input-group--password">
+            <input class="register__input" type="password" name="password" id="password" placeholder="Password"
+              aria-label=" password" aria-describedby="passwordError" required>
+            <img id="passwordIconError" src="./images/icon-error.svg" alt="">
+            <p role="alert" id="passwordError"><i>Password can not be empty</i></p>
+          </div>
+        </fieldset>
+
+        <button class="register__button" type="submit">CLAIM YOUR FREE TRIAL</button>
+
+        <p class="register__rules">
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+</body>
+
+</html>

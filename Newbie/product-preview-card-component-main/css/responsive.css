@@ -1,0 +1,42 @@
+@media only screen and (max-width: 768px) {
+
+    body {
+        height: auto;
+    }
+
+    .card {
+        width: 300px;
+        height: 660px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .card__image {
+        position: relative;
+        width: 300px;
+    }
+
+    .card__image img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card__body {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+    }
+
+    .card__title2 {
+        margin: 12px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card__btn:hover {
+        background-color: var(--very-dark-blue);
+    }
+}

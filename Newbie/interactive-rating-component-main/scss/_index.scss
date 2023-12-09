@@ -1,0 +1,132 @@
+.wrapper {
+    min-width: 18rem;
+    max-width: 24rem;
+    margin: 0 1rem;
+}
+
+.card {
+    background-color: $darkBlue;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    //responsive
+    @include tablet() {
+        padding: 1.8rem;
+    }
+}
+
+.card__star-icon {
+    background-color: $bgDarkBlue;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    color: $white;
+    font-family: $ff-mainBold;
+    margin: 1rem 0 0 0;
+}
+
+.card__caption {
+    font-size: 0.9rem;
+    color: $lightGray;
+    font-family: $ff-mainRegular;
+    margin-top: 0.5rem;
+}
+
+.card__form {
+    margin-top: 1.5rem;
+
+    fieldset {
+        padding: 0;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.card__rate {
+    position: relative;
+    width: 2.6rem;
+    height: 2.6rem;
+
+    //responsive
+    @include tablet() {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.card__label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: $ff-mainBold;
+    font-size: 0.9rem;
+    color: $white;
+}
+
+.card__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    background-color: $bgDarkBlue;
+    color: $lightGray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:checked,
+    &:focus {
+        outline: none;
+        border: none;
+        background-color: $lightGray;
+    }
+
+    //responsive
+    @include desktop() {
+        &:hover {
+            background-color: $orange;
+        }
+    }
+}
+
+
+.card__button {
+    width: 100%;
+    font-family: $ff-mainRegular;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.063rem;
+    color: $white;
+    background-color: $orange;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.8rem 0;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:focus {
+        color: $orange;
+        background-color: $white;
+    }
+
+    //responsive
+    @include desktop() {
+        &:hover {
+            color: $orange;
+            background-color: $white;
+        }
+    }
+}

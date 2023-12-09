@@ -1,0 +1,29 @@
+// 320px => 575px = mobile
+// 576px => 1023px = tablet
+// 1024px => 1439px = desktop
+// 1440px => 1920px = desktop-large
+
+@mixin tablet() {
+    @media only screen and (min-width: 36rem) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media only screen and (min-width: 64rem) {
+        @content;
+    }
+}
+
+@mixin desktop-l() {
+    @media only screen and (min-width: 90rem) {
+        @content;
+    }
+}
+
+//create custom screen size
+@mixin responsive($minWidth) {
+    @media only screen and (min-width: $minWidth) {
+        @content;
+    }
+}

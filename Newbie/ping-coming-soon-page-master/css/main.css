@@ -1,0 +1,143 @@
+/* reset styles */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--franklin);
+}
+
+.main {
+    width: 100vw;
+}
+
+/* ping */
+.ping {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ping__logo {
+    margin-top: 5rem;
+    width: 4.5rem;
+}
+
+.ping__title {
+    font-weight: var(--light);
+    color: var(--gray);
+    font-size: 1.5rem;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.ping__title span {
+    font-weight: var(--bold);
+    color: var(--very-dark-blue);
+}
+
+.ping__sub-title {
+    font-weight: var(--light);
+    color: var(--very-dark-blue);
+    font-size: 0.9rem;
+}
+
+.ping__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 85%;
+}
+
+.ping__email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ping__email input {
+    width: 100%;
+    padding: 0.8rem 2rem;
+    border: none;
+    outline: 2px solid var(--pale-blue);
+    border-radius: 2rem;
+}
+
+.ping__email input::placeholder {
+    color: var(--pale-blue);
+    font-size: 0.8rem;
+    font-weight: var(--light);
+}
+
+.ping__email p {
+    font-weight: var(--semibold);
+    color: var(--light-red);
+    font-size: 0.7rem;
+    margin: 0.5rem 0 1rem 0;
+    display: none;
+}
+
+.ping__form button {
+    width: 100%;
+    padding: 0.8rem 2rem;
+    background-color: var(--blue);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: var(--semibold);
+    border-radius: 2rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem 0 hsla(223, 87%, 63%, 0.4);
+}
+
+.ping__img {
+    width: 100%;
+    margin: 5rem 0 8rem 0;
+}
+
+.ping__social {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.ping__link {
+    border: 0.063rem solid var(--pale-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.375rem;
+}
+
+
+.ping__link a {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 0.9rem;
+}
+
+.ping__footer {
+    margin-bottom: 2rem;
+}
+
+.ping__footer p {
+    font-weight: var(--light);
+    font-size: 0.6rem;
+    color: var(--gray);
+}

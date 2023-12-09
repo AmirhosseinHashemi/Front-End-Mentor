@@ -1,0 +1,31 @@
+@import "./fonts";
+@import "./typograghy";
+@import "./color";
+@import "./responsive";
+@import "./index";
+
+//reset style
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: $bgColor;
+    font-family: $ff-regular;
+    line-height: 1.7;
+    margin: 8rem 0 4rem 0;
+
+    //responsive
+    @include desktop() {
+        margin: 2rem 0;
+    }
+}
