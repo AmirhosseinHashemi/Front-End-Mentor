@@ -1,0 +1,58 @@
+// T Y P O G R A P H Y :
+
+// font-family
+$ff-heading: 'DM Serif Display', serif;
+$ff-main: 'Karla', sans-serif;
+
+// font-weight
+$fw-regular: 400;
+$fw-bold: 700;
+
+// line-height
+$lh-default: 1.5;
+$lh-high: 1.7;
+$lh-low: 1;
+
+// letter spacing
+$ls-default: 0;
+$ls-high: 0.15rem;
+$ls-low: -0.15rem;
+
+// font size 
+$fs-unit: 2rem;
+$fs-xs: calc(0.25 * $fs-unit);
+$fs-sm: calc(0.5 * $fs-unit);
+$fs-md: calc(0.75 * $fs-unit);
+$fs-lg: calc(1.25 * $fs-unit);
+$fs-xl: calc(1.75 * $fs-unit);
+$fs-xxl: calc(2.75 * $fs-unit);
+$fs-xxxl: calc(3.75 * $fs-unit);
+
+
+
+
+// C O L O R S :
+
+// primary
+$primary-darkViolet: hsl(256, 26%, 20%);
+$primary-grayishBlue: hsl(216, 30%, 68%);
+
+// neutral
+$neutral-veryDarkViolet: hsl(270, 9%, 17%);
+$neutral-darkGrayishViolet: hsl(273, 4%, 51%);
+$neutral-veryLightGray: hsl(0, 0%, 98%);
+
+
+
+
+
+// S P A C I N G  S Y S T E M : 
+
+$space-unit: 2rem;
+$space-xs: calc(0.25 * $space-unit);
+$space-sm: calc(0.5 * $space-unit);
+$space-md: calc(0.75 * $space-unit);
+$space-lg: calc(1.5 * $space-unit);
+$space-xl: calc(2 * $space-unit);
+$space-xxl: calc(3 * $space-unit);
+$space-xxxl: calc(6 * $space-unit);

@@ -1,0 +1,31 @@
+// 320px => 575px = mobile
+// 576px => 1023px = tablet
+// 1024px => 1439px = desktop
+// 1440px => 1920px = desktop-large
+
+// tablet
+@media only screen and (min-width: 36rem) {}
+
+
+// desktop
+@media only screen and (min-width: 64rem) {
+    main {
+        max-width: 40rem;
+    }
+
+    .calculator__inputs {
+        align-self: flex-start;
+    }
+
+    .calculator__button {
+        align-self: flex-end;
+
+        &:hover {
+            background-color: $offBlack;
+        }
+    }
+}
+
+
+// desktop large
+@media only screen and (min-width: 90rem) {}

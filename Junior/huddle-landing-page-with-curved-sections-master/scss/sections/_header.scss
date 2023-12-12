@@ -1,0 +1,26 @@
+.header {
+    padding-top: $space-unit;
+    margin-bottom: $space-xxxl;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 7rem;
+        height: 1.3rem;
+    }
+
+    &__button:link,
+    &__button:visited {
+        font-size: $fs-md;
+        color: $primary-pink;
+
+        padding: $space-xs $space-md;
+
+        border: 0.063rem solid $primary-lightPink;
+        border-radius: $round;
+    }
+}

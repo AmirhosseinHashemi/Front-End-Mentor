@@ -1,0 +1,38 @@
+.statistics {
+    display: flex;
+    margin-top: $space-xxl;
+
+    //responsive
+    @include desktop() {
+        display: block;
+    }
+
+    &__boxes {
+
+        //responsive
+        @include desktop() {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    &__box {
+        margin-bottom: $space-lg;
+    }
+
+    &__img {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    &__int {
+        font-size: $fs-xl;
+        font-family: $ff-body-bold;
+    }
+
+    &__title {
+        font-size: $fs-md;
+        color: $primary-pink;
+    }
+}

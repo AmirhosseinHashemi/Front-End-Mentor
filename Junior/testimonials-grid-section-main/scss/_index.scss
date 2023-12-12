@@ -1,0 +1,127 @@
+main {
+    max-width: 20rem;
+    margin: 5rem auto;
+}
+
+// article
+.graduate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.graduate__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.graduate__img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.graduate__id {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.graduate__name {
+    font: 0.8rem $ff-semiBold;
+    text-transform: capitalize;
+}
+
+.graduate__label {
+    font: 0.8rem $ff-medium;
+    text-transform: capitalize;
+    opacity: 0.5;
+}
+
+.graduate__main-opinion {
+    font: 1.2rem $ff-semiBold;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.graduate__explanation {
+    font: 0.8rem $ff-medium;
+    line-height: 1.4;
+    opacity: 0.7;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+
+// graduate--1
+.graduate--1 {
+    background: $moderateViolet url(../images/bg-pattern-quotation.svg) no-repeat 85% 0;
+    color: $lightGray;
+}
+
+.graduate__main-opinion--1 {
+    color: $lightGrayishBlue;
+}
+
+
+// graduate--2 , graduate--4
+.graduate--2 {
+    background-color: $veryDarkGrayishBlue;
+    color: $lightGray;
+}
+
+.graduate--4 {
+    background-color: $veryDarkBlackishBlue;
+    color: $lightGray;
+
+}
+
+.graduate__main-opinion--2,
+.graduate__main-opinion--4 {
+    color: $lightGrayishBlue;
+}
+
+
+// graduate--3 , graduate--5
+.graduate--3,
+.graduate--5 {
+    background-color: $white;
+    color: $veryDarkGrayishBlue;
+}
+
+.graduate__main-opinion--3,
+.graduate__main-opinion--5 {
+    color: $veryDarkBlackishBlue;
+}
+
+
+// footer
+footer {
+    margin: 2rem auto;
+    font: 0.8rem $ff-medium;
+    color: $veryDarkGrayishBlue;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 2rem;
+}
+
+.link:link , .link:visited {
+    font-family: $ff-semiBold;
+    color: $veryDarkBlackishBlue;
+}
+
+.link:active , .link:hover {
+    color: $veryDarkGrayishBlue;
+    text-decoration: none;
+}

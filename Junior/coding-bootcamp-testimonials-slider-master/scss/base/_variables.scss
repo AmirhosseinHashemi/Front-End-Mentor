@@ -1,0 +1,53 @@
+/// TYPOGRAPHY
+
+// font family
+$ff-main: 'Inter', sans-serif;
+
+//font weight
+$fw-light: 300;
+$fw-medium: 500;
+$fw-bold: 700;
+
+// line height
+$lh-default: 1.5;
+$lh-medium: 1.7;
+$lh-low: 1.2;
+
+//letter spacing
+$ls-default: 0;
+$ls-low: -0.063rem;
+$ls-high: 0.063rem;
+
+// font size 
+$fs-unit: 1rem;
+$fs-xs: calc(0.25 * $fs-unit);
+$fs-sm: calc(0.5 * $fs-unit);
+$fs-md: calc(0.75 * $fs-unit);
+$fs-lg: calc(1.25 * $fs-unit);
+$fs-xl: calc(1.75 * $fs-unit);
+$fs-xxl: calc(2.75 * $fs-unit);
+$fs-xxxl: calc(3.75 * $fs-unit);
+
+
+/// COLORS
+
+//primary
+$primary-darkBlue: hsl(240, 38%, 20%);
+$primary-grayishBlue: hsl(240, 18%, 77%);
+
+
+/// SPACING SYSTEM
+$space-unit: 2rem;
+$space-xs: calc(0.25 * $space-unit);
+$space-sm: calc(0.5 * $space-unit);
+$space-md: calc(0.75 * $space-unit);
+$space-lg: calc(1.5 * $space-unit);
+$space-xl: calc(2 * $space-unit);
+$space-xxl: calc(3 * $space-unit);
+$space-xxxl: calc(4 * $space-unit);
+
+
+
+/// BORDER RADIUS
+$round: 2rem;
+$square: 0.3rem;

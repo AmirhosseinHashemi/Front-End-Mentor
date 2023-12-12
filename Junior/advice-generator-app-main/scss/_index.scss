@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.advice {
+    position: relative;
+    background-color: $darkGrayishBlue;
+    width: 95%;
+    max-width: 22.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+}
+
+.advice__title {
+    font: 0.7rem $ff-main;
+    letter-spacing: 0.2rem;
+    color: $neonGreen;
+    margin: 2rem 0;
+}
+
+.advice__text {
+    font: 1.5rem $ff-main;
+    color: $lightCyan;
+}
+
+.advice__image {
+    margin: 2rem 0 4rem 0;
+}
+
+.advice__dice {
+    width: 1rem;
+    height: 1rem;
+    background-color: $neonGreen;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2rem;
+    cursor: pointer;
+}

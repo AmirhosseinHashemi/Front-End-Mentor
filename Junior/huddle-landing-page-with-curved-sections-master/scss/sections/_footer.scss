@@ -1,0 +1,183 @@
+.footer {
+    background-color: $neutral-veryDarkCyan;
+    color: $neutral-veryPaleBlue;
+    padding: $space-unit;
+    position: relative;
+
+    &__boxes {
+
+        //responsive
+        @include desktop() {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: $space-xxxl;
+        }
+    }
+
+    &__newsletter {
+
+        //responsive
+        @include desktop() {
+            order: 1;
+        }
+    }
+
+    &__newsletter-title {
+        font-family: $ff-body-semiBold;
+        font-size: $fs-lg;
+        text-transform: uppercase;
+        margin-bottom: $space-sm;
+    }
+
+    &__newsletter-caption {
+        margin-bottom: $space-lg;
+        opacity: 0.8;
+    }
+
+    &__newsletter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        //responsive
+        @include desktop() {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: $space-unit;
+        }
+
+        label {
+            align-self: stretch;
+            margin-bottom: $space-sm;
+
+            //responsive
+            @include desktop() {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+
+        input:focus-visible {
+            outline-color: $neutral-veryPaleBlue;
+        }
+
+        p {
+            font-size: $fs-md;
+            color: $primary-lightRed;
+            margin-top: $space-xs;
+            display: none;
+        }
+    }
+
+    &__newsletter-button {
+        padding: $space-xs $space-md;
+        border-radius: $square;
+        font-size: $fs-md;
+        cursor: pointer;
+        box-shadow: none;
+
+        &:focus-visible {
+            outline-color: $neutral-veryPaleBlue;
+        }
+    }
+
+    &__logo {
+        path {
+            fill: $neutral-veryPaleBlue;
+        }
+
+        margin-top: $space-xxl;
+        margin-bottom: $space-sm;
+
+        //responsive
+        @include desktop() {
+            margin-top: 0;
+        }
+    }
+
+    &__caption {
+        font-size: $fs-unit;
+        line-height: $lineHeight-medium;
+        opacity: 0.8;
+        margin-bottom: $space-xl;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: $space-md;
+        margin-bottom: $space-xs;
+    }
+
+    &__social {
+        margin-top: $space-unit;
+        display: flex;
+    }
+
+    &__link:link,
+    &__link:visited {
+        background-color: white;
+        color: $neutral-veryDarkCyan;
+        margin-right: $space-sm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: $square;
+        font-size: $fs-lg;
+        cursor: pointer;
+        transition: all 0.1s;
+
+        &:focus-visible {
+            outline-color: $neutral-veryPaleBlue;
+        }
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: $primary-lightRed;
+    }
+
+    &__link:link:nth-child(2),
+    &__link:visited:nth-child(2) {
+        background-color: transparent;
+        color: $neutral-veryPaleBlue;
+        font-size: $fs-xl;
+    }
+
+    &__link:hover:nth-child(2),
+    &__link:active:nth-child(2) {
+        color: $primary-lightRed;
+    }
+
+    &__link:link:nth-child(1),
+    &__link:visited:nth-child(1) {
+        justify-content: flex-end;
+        padding-right: 0.2rem;
+    }
+
+    &__link:link:nth-child(3),
+    &__link:visited:nth-child(3) {
+        padding-left: 0.1rem;
+    }
+}
+
+.footer::before {
+    content: "";
+    background: url(../images/bg-footer-top-mobile.svg) no-repeat top;
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+
+    //responsive
+    @include desktop() {
+        background-image: url(../images/bg-footer-top-desktop.svg);
+        top: -9.7rem;
+    }
+}

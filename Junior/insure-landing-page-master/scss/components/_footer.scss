@@ -1,0 +1,112 @@
+footer {
+    margin-top: $space-xxxl;
+    padding-top: $space-lg;
+    background: $neutral-veryLightGray url(../images/bg-pattern-footer-mobile.svg) no-repeat;
+    background-position-x: center;
+    background-position-y: -5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-xl;
+
+    text-align: center;
+    font-size: $fs-sm;
+}
+
+.footer-content__list {
+    a {
+        color: $neutral-veryDarkViolet;
+    }
+}
+
+.footer-content__list li:nth-child(1) {
+    margin-bottom: $space-md;
+    text-transform: uppercase;
+    letter-spacing: $ls-high;
+    font-weight: $fw-bold;
+    color: $neutral-darkGrayishViolet;
+}
+
+.footer-content__media {
+    align-self: stretch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-lg;
+
+    border-bottom: 0.1rem solid hsla(273, 4%, 51%, 0.3);
+    padding-bottom: $space-lg;
+
+    ul {
+        display: flex;
+        gap: $space-md;
+    }
+}
+
+.footer-content__details {
+    color: $neutral-veryDarkViolet;
+    text-transform: uppercase;
+    letter-spacing: $ls-high;
+    font-weight: $fw-bold;
+
+    a {
+        color: $neutral-darkGrayishViolet;
+    }
+}
+
+
+// D E S K T O P
+@media only screen and (min-width: 1024px) {
+    footer {
+        background-image: url(../images/bg-pattern-footer-desktop.svg);
+        background-position: left top;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr auto;
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+    .footer-content__media {
+        grid-column: 1 / -1;
+        align-self: flex-end;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-content__details {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        justify-self: center;
+        padding-bottom: $space-xs;
+    }
+
+    .footer-content__list {
+        display: flex;
+        flex-direction: column;
+        gap: $space-sm;
+        font-size: 1.1rem;
+
+        a:link:hover,
+        a:visited:hover {
+            text-decoration: solid underline $neutral-veryDarkViolet 0.1rem;
+        }
+    }
+
+    .footer-content__icon {
+        &:hover {
+            path {
+                fill: $neutral-veryDarkViolet;
+            }
+        }
+    }
+}

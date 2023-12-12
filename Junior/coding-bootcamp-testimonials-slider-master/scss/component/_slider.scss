@@ -1,0 +1,183 @@
+main {
+    max-width: 23.438rem;
+    margin: 0 auto;
+
+    //responsive
+    @include desktop() {
+        max-width: 64rem;
+    }
+}
+
+.carousel {
+    margin: $space-lg auto;
+    margin-bottom: $space-xxl;
+    padding: 0 $space-sm;
+
+    &__slider {
+        position: relative;
+    }
+
+    &__images {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    //member's image
+    &__images img:nth-child(2) {
+        position: absolute;
+        left: 0;
+        transform: scale(0.8);
+        border-radius: $square;
+        box-shadow: 0 0.5rem 3rem 0 hsla(240, 38%, 20%, 0.15);
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -100%);
+
+        button {
+            border: none;
+            background-color: white;
+            padding: $space-xs;
+            transition: all 0.3s;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    //previous button
+    &__buttons button:nth-child(1) {
+        border-radius: $round 0 0 $round;
+    }
+
+    //next button
+    &__buttons button:nth-child(2) {
+        border-radius: 0 $round $round 0;
+    }
+
+    &__icon {
+        width: 1.25rem;
+        height: 1.25rem;
+        stroke: $primary-grayishBlue;
+        stroke-width: 0.2rem;
+        transition: all 0.3s;
+    }
+
+    &__buttons button:active {
+        svg {
+            stroke: $primary-darkBlue;
+        }
+    }
+
+    &__buttons button:focus-visible {
+        outline: 0.063rem solid $primary-darkBlue;
+        outline-offset: 0.1rem;
+
+        svg {
+            stroke: $primary-darkBlue;
+        }
+    }
+
+    &__testimonial {
+        margin-top: $space-xl;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $space-md;
+
+        img {
+            position: absolute;
+            transform: translateY(-50%);
+            width: 20%;
+        }
+    }
+
+    &__text {
+        font-size: $fs-lg;
+        font-weight: $fw-light;
+        color: $primary-darkBlue;
+        text-align: center;
+    }
+
+    &__info {
+        font-size: $fs-unit;
+        text-align: center;
+    }
+
+    //name
+    &__info p:nth-child(1) {
+        font-weight: $fw-bold;
+    }
+
+    //job
+    &__info p:nth-child(2) {
+        font-weight: $fw-medium;
+        color: $primary-grayishBlue;
+    }
+
+    //responsive
+    @include desktop() {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__slider {
+            order: 1;
+            flex-basis: 50%;
+        }
+
+        &__testimonial {
+            margin-top: 0;
+            align-items: flex-start;
+            flex-basis: 50%;
+            transform: translate(25%);
+            z-index: 1;
+
+            img {
+                transform: translate(50%, -50%);
+            }
+        }
+
+        &__text {
+            text-align: left;
+        }
+
+        &__info {
+            display: flex;
+            gap: $space-xs;
+        }
+
+        &__buttons {
+            left: 20%;
+            transform: translateY(-3rem);
+        }
+
+        &__buttons button:hover {
+            svg {
+                stroke: $primary-darkBlue;
+            }
+        }
+    }
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+
+    //responsive
+    @include desktop() {
+        width: 50%;
+    }
+}

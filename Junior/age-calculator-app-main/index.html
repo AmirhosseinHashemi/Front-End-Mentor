@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="age calculator app">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="calculator">
+
+      <form action="#" method="post" class="calculator__form" id="calculator__form">
+        <div class="calculator__inputs">
+          <label class="calculator__label calculator__label--day" for="calculator__day">
+            DAY
+            <input type="text" name="day" id="calculator__day" class="calculator__input" placeholder="DD">
+            <p role="alert" class="calculator__error calculator__error--day"></p>
+          </label>
+          <label class="calculator__label calculator__label--month" for="calculator__month">
+            MONTH
+            <input type="text" name="month" id="calculator__month" class="calculator__input" placeholder="MM">
+            <p role="alert" class="calculator__error calculator__error--month"></p>
+          </label>
+          <label class="calculator__label calculator__label--year" for="calculator__year">
+            YEAR
+            <input type="text" name="year" id="calculator__year" class="calculator__input" placeholder="YYYY">
+            <p role="alert" class="calculator__error calculator__error--year"></p>
+          </label>
+        </div>
+        <button class="calculator__button" id="calculator__button" aria-label="result button">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </button>
+      </form>
+
+      <div class="calculator__line"></div>
+
+      <section class="calculator__result">
+        <p class="calculator__age">
+          <span class="calculator__dash calculator__dash--year">--</span> years
+        </p> 
+        <p class="calculator__age">
+          <span class="calculator__dash calculator__dash--month">--</span> months
+        </p>
+        <p class="calculator__age">
+          <span class="calculator__dash calculator__dash--day">--</span> days
+        </p>
+      </section>
+
+    </section>
+
+  </main>
+</body>
+
+</html>

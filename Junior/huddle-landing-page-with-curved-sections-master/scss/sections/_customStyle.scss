@@ -1,0 +1,22 @@
+.container {
+    max-width: 20rem;
+    margin: 0 auto;
+
+    //responsive
+    @include desktop() {
+        max-width: 60rem;
+    }
+}
+
+.btn {
+    display: inline-block;
+    color: $neutral-veryPaleBlue;
+    background-color: $primary-pink;
+    box-shadow: 0 0.5rem 0.8rem hsla(322, 100%, 66%, 0.3);
+    transition: all 0.1s;
+}
+
+.btn:hover {
+    background-color: $primary-lightPink;
+    box-shadow: none;
+}

@@ -1,0 +1,39 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    &__title {
+        margin-bottom: $space-unit;
+    }
+
+    &__caption {
+        margin-bottom: $space-lg;
+
+        //responsive
+        @include desktop() {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__button {
+        padding: $space-sm $space-lg;
+        margin-bottom: $space-xxl;
+
+        border-radius: $round;
+    }
+
+    &__img {
+        width: 100%;
+
+        //responsive
+        @include desktop() {
+            width: 70%;
+        }
+    }
+}

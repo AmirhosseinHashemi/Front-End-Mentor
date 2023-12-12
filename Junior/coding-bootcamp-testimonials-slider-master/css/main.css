@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  max-width: 23.438rem;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 64rem) {
+  main {
+    max-width: 64rem;
+  }
+}
+
+.carousel {
+  margin: 3rem auto;
+  margin-bottom: 6rem;
+  padding: 0 1rem;
+}
+.carousel__slider {
+  position: relative;
+}
+.carousel__images {
+  position: relative;
+}
+.carousel__images img {
+  width: 100%;
+}
+.carousel__images img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  transform: scale(0.8);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5rem 3rem 0 hsla(240, 38%, 20%, 0.15);
+}
+.carousel__buttons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.carousel__buttons button {
+  border: none;
+  background-color: white;
+  padding: 0.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel__buttons button:nth-child(1) {
+  border-radius: 2rem 0 0 2rem;
+}
+.carousel__buttons button:nth-child(2) {
+  border-radius: 0 2rem 2rem 0;
+}
+.carousel__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: hsl(240, 18%, 77%);
+  stroke-width: 0.2rem;
+  transition: all 0.3s;
+}
+.carousel__buttons button:active svg {
+  stroke: hsl(240, 38%, 20%);
+}
+.carousel__buttons button:focus-visible {
+  outline: 0.063rem solid hsl(240, 38%, 20%);
+  outline-offset: 0.1rem;
+}
+.carousel__buttons button:focus-visible svg {
+  stroke: hsl(240, 38%, 20%);
+}
+.carousel__testimonial {
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.carousel__testimonial img {
+  position: absolute;
+  transform: translateY(-50%);
+  width: 20%;
+}
+.carousel__text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: hsl(240, 38%, 20%);
+  text-align: center;
+}
+.carousel__info {
+  font-size: 1rem;
+  text-align: center;
+}
+.carousel__info p:nth-child(1) {
+  font-weight: 700;
+}
+.carousel__info p:nth-child(2) {
+  font-weight: 500;
+  color: hsl(240, 18%, 77%);
+}
+@media only screen and (min-width: 64rem) {
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel__slider {
+    order: 1;
+    flex-basis: 50%;
+  }
+  .carousel__testimonial {
+    margin-top: 0;
+    align-items: flex-start;
+    flex-basis: 50%;
+    transform: translate(25%);
+    z-index: 1;
+  }
+  .carousel__testimonial img {
+    transform: translate(50%, -50%);
+  }
+  .carousel__text {
+    text-align: left;
+  }
+  .carousel__info {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .carousel__buttons {
+    left: 20%;
+    transform: translateY(-3rem);
+  }
+  .carousel__buttons button:hover svg {
+    stroke: hsl(240, 38%, 20%);
+  }
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+}
+@media only screen and (min-width: 64rem) {
+  .bg {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

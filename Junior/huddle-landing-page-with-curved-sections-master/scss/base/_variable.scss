@@ -1,0 +1,64 @@
+//////////////////////////  TYPOGRAPHY //////////////////////////////
+
+// font family
+$ff-body-regular: "Open Sans Regular", sans-serif;
+$ff-body-semiBold: "Open Sans SemiBold", sans-serif;
+$ff-body-bold: "Open Sans Bold", sans-serif;
+
+$ff-heading-bold: "Poppins Bold", sans-serif;
+
+// line height
+$lineHeight-default: 1.5;
+$lineHeight-medium: 1.7;
+$lineHeight-low: 1.2;
+
+//letter spacing
+$letterSpacing-default: 0;
+$letterSpacing-low: -0.063rem;
+$letterSpacing-high: 0.063rem;
+
+// font size 
+$fs-unit: 1rem;
+$fs-xs: calc(0.25 * $fs-unit);
+$fs-sm: calc(0.5 * $fs-unit);
+$fs-md: calc(0.75 * $fs-unit);
+$fs-lg: calc(1.25 * $fs-unit);
+$fs-xl: calc(1.75 * $fs-unit);
+$fs-xxl: calc(2.75 * $fs-unit);
+$fs-xxxl: calc(3.75 * $fs-unit);
+
+
+
+
+//////////////////////////  COLORS ///////////////////////////////
+
+// primary
+$primary-pink: hsl(322, 100%, 66%);
+$primary-lightPink: hsl(321, 100%, 78%);
+$primary-lightRed: hsl(0, 100%, 63%);
+
+// neutral
+$neutral-veryDarkCyan: hsl(192, 100%, 9%);
+$neutral-veryPaleBlue: hsl(207, 100%, 98%);
+
+
+
+
+//////////////////////////  SPACING SYSTEM /////////////////////////
+
+$space-unit: 2rem;
+$space-xs: calc(0.25 * $space-unit);
+$space-sm: calc(0.5 * $space-unit);
+$space-md: calc(0.75 * $space-unit);
+$space-lg: calc(1.5 * $space-unit);
+$space-xl: calc(2 * $space-unit);
+$space-xxl: calc(3 * $space-unit);
+$space-xxxl: calc(4 * $space-unit);
+
+
+
+
+//////////////////////////  BORDER RADIUS /////////////////////////
+
+$round: 2rem;
+$square: 0.3rem;

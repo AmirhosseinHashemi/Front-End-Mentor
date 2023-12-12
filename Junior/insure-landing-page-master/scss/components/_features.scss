@@ -1,0 +1,48 @@
+.features {
+    margin-top: $space-xxxl;
+    text-align: center;
+    color: $neutral-veryDarkViolet;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: $space-xxl;
+    }
+
+    h2 {
+        margin-bottom: $space-xxl;
+    }
+
+    img {
+        width: 25%;
+    }
+
+    h3 {
+        margin-top: $space-lg;
+        margin-bottom: $space-sm;
+    }
+
+    p {
+        color: $neutral-darkGrayishViolet;
+    }
+}
+
+
+// D E S K T O P
+@media only screen and (min-width: 1024px) {
+    .features {
+        text-align: left;
+        padding-top: $space-xxxl;
+
+        &__box {
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: $space-xs;
+        }
+
+        &__item {
+            flex-basis: 30%;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: $primary-darkViolet;
+    margin-top: $space-lg;
+    text-align: center;
+
+    position: relative;
+
+    img {
+        max-width: 100%;
+    }
+
+    article {
+        padding: $space-xxxl $space-xs;
+    }
+
+    article::before {
+        content: url(../images/bg-pattern-intro-left-mobile.svg);
+        position: absolute;
+        left: 0;
+        top: 45%;
+    }
+
+    article::after {
+        content: url(../images/bg-pattern-intro-right-mobile.svg);
+        position: absolute;
+        right: 0;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: $neutral-veryLightGray;
+        margin-top: $space-unit;
+        margin-bottom: $space-xxl;
+    }
+
+    a {
+        color: $neutral-veryLightGray;
+        padding: $space-sm $space-lg;
+        border: 0.2rem solid $neutral-veryLightGray;
+    }
+}
+
+
+
+// D E S K T O P
+@media only screen and (min-width: 1024px) {
+    .hero {
+        text-align: left;
+
+        article {
+            width: 40%;
+            position: unset;
+        }
+
+        article::before {
+            content: url(../images/bg-pattern-intro-left-desktop.svg);
+            top: 80%;
+            left: 0;
+        }
+
+        article::after {
+            content: url(../images/bg-pattern-intro-right-desktop.svg);
+            top: 0;
+        }
+
+        img {
+            position: absolute;
+            top: 10rem;
+            right: 10rem;
+            max-width: 35%;
+        }
+
+        a:link:hover,
+        a:visited:hover {
+            background-color: $neutral-veryLightGray;
+            color: $neutral-veryDarkViolet;
+        }
+    }
+}

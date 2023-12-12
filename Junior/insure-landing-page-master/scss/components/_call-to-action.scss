@@ -1,0 +1,52 @@
+.CTA {
+    margin-top: $space-xxxl;
+
+    &__content {
+        padding: $space-xxl $space-lg;
+        background: $primary-darkViolet url(../images/bg-pattern-how-we-work-mobile.svg) no-repeat top right;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $space-xl;
+
+        text-align: center;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    a {
+        color: $neutral-veryLightGray;
+        padding: $space-sm $space-lg;
+        border: 0.2rem solid $neutral-veryLightGray;
+        font-size: $fs-sm;
+    }
+}
+
+
+// D E S K T O P
+@media only screen and (min-width: 1024px) {
+    .CTA {
+        &__content {
+            flex-direction: row;
+            justify-content: space-between;
+            background-image: url(../images/bg-pattern-how-we-work-desktop.svg);
+        }
+
+        h2 {
+            flex-basis: 55%;
+        }
+
+        a {
+            font-size: $fs-md;
+        }
+
+        a:link:hover,
+        a:visited:hover {
+            background-color: $neutral-veryLightGray;
+            color: $neutral-veryDarkViolet;
+        }
+    }
+}

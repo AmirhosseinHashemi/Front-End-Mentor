@@ -1,0 +1,123 @@
+.features {
+    margin-bottom: $space-xxxl;
+    margin-top: $space-xxxl;
+    padding: $space-sm 0;
+    position: relative;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        //responsive
+        @include desktop() {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: $space-xl;
+        }
+    }
+
+    &__img {
+        width: 90%;
+        margin-bottom: $space-xl;
+
+        //responsive
+        @include desktop() {
+            width: 40%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__explanation {
+        text-align: center;
+
+        //responsive
+        @include desktop() {
+            text-align: left;
+            width: 60%;
+        }
+
+        h2 {
+            font-size: $fs-lg;
+            margin-bottom: $space-sm;
+        }
+    }
+
+    &--first,
+    &--third {
+        background-color: $neutral-veryPaleBlue;
+
+        img {
+            order: 1;
+        }
+    }
+
+    &--first::before {
+        position: absolute;
+        content: "";
+        background: url(../images/bg-section-top-mobile-1.svg) no-repeat top;
+        top: -7rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        //responsive
+        @include desktop() {
+            background-image: url(../images/bg-section-top-desktop-1.svg);
+            top: -10rem;
+        }
+    }
+
+    &--first::after {
+        position: absolute;
+        content: "";
+        background: url(../images/bg-section-bottom-mobile-1.svg) no-repeat bottom;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -3rem;
+
+        //responsive
+        @include desktop() {
+            background-image: url(../images/bg-section-bottom-desktop-1.svg);
+            bottom: -7rem;
+        }
+    }
+
+    &--third::before {
+        position: absolute;
+        content: "";
+        background: url(../images/bg-section-top-mobile-2.svg) no-repeat top;
+        top: -6rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        //responsive
+        @include desktop() {
+            background-image: url(../images/bg-section-top-desktop-2.svg);
+            top: -9rem;
+        }
+    }
+
+    &--third::after {
+        position: absolute;
+        content: "";
+        background: url(../images/bg-section-bottom-mobile-2.svg) no-repeat bottom;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -6rem;
+
+        //responsive
+        @include desktop() {
+            background-image: url(../images/bg-section-bottom-desktop-2.svg);
+            bottom: -8rem;
+        }
+    }
+
+    &--second {
+        padding: $space-lg 0;
+    }
+}
