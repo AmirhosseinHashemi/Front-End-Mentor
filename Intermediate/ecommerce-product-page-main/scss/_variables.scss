@@ -1,0 +1,38 @@
+// -------------------------------------------------------------- Typography
+$ff-kumbh: "Kumbh Sans", sans-serif;
+
+$fw-regular: 400;
+$fw-bold: 700;
+
+$fs-unit: 0.8rem;
+$fs-xs: $fs-unit * 0.5;
+$fs-sm: $fs-unit * 1.5;
+$fs-md: $fs-unit * 2;
+$fs-lg: $fs-unit * 3;
+$fs-xl: $fs-unit * 4;
+$fs-xxl: $fs-unit * 5;
+$fs-xxxl: $fs-unit * 7;
+
+// -------------------------------------------------------------- colors library
+$color-primary-orange: hsl(26, 100%, 55%);
+$color-primary-paleOrange: hsl(25, 100%, 94%);
+
+$color-gray-1: hsl(220, 13%, 13%);
+$color-gray-2: hsl(219, 9%, 45%);
+$color-gray-3: hsl(220, 14%, 75%);
+$color-gray-4: hsl(223, 64%, 98%);
+
+$color-neutral-white: hsl(0, 0%, 100%);
+$color-neutral-black: hsl(0, 0%, 0%);
+
+$color-neutral-lightBox: hsla(0, 0%, 0%, 75%);
+
+// -------------------------------------------------------------- spacing library
+$space-unit: 0.8rem;
+$space-xs: $space-unit * 0.5;
+$space-sm: $space-unit * 2;
+$space-md: $space-unit * 4;
+$space-lg: $space-unit * 8;
+$space-xl: $space-unit * 10;
+$space-xxl: $space-unit * 15;
+$space-xxxl: $space-unit * 20;

@@ -2,16 +2,6 @@
 
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-- [Author](#author)
-
 ## Overview 🧾
 
 ### The challenge
@@ -25,13 +15,13 @@ Users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 
-### Screenshot 📷
-
-![](./screenshot.jpg)
-
 ### Links 🔗
 
 - Live Site URL: [E-commerce product page](https://your-live-site-url.com)
+
+### Screenshot 📷
+
+![](./screenshot.jpg)
 
 ## My process 🚀
 
