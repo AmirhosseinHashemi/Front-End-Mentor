@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: $space-md;
+}
+
+.header__left {
+  display: flex;
+  align-items: baseline;
+  gap: $space-unit;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+}
+
+.header__logo {
+  width: 13.8rem;
+  height: 2rem;
+}
+
+.header__cart {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.header__avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.header img {
+  width: 100%;
+}

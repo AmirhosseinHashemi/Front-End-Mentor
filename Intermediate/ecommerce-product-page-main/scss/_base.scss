@@ -14,3 +14,17 @@ html {
   font-size: 62.5%;
   // 1rem = 10px
 }
+
+section {
+  padding: $space-md;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}

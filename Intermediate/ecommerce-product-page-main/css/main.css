@@ -10,4 +10,65 @@ html {
   font-size: 62.5%;
 }
 
+section {
+  padding: 3.2rem;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.nav__close {
+  display: none;
+}
+
+.nav__btn {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+.header__left {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.header__logo {
+  width: 13.8rem;
+  height: 2rem;
+}
+
+.header__cart {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.header__avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.header img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */
