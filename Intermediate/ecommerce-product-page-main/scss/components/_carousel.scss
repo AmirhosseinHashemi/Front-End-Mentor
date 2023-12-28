@@ -1,44 +1,9 @@
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-section {
-  padding: 3.2rem;
-}
-
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-}
-
-.nav__close {
-  display: none;
-}
-
-.nav__btn {
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
 .carousel {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: $space-md;
+
   padding: 0;
 }
 
@@ -59,6 +24,7 @@ a:visited {
   min-width: 37.5rem;
   max-width: 100rem;
   height: 35rem;
+
   transition: all 0.3s;
 }
 
@@ -72,9 +38,11 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 3.6rem;
   height: 3.6rem;
-  background-color: hsl(0, 0%, 100%);
+
+  background-color: $color-neutral-white;
   border-radius: 50%;
 }
 
@@ -100,50 +68,11 @@ a:visited {
 }
 
 .carousel__thumbnail {
+  //   display: flex;
   display: none;
-  gap: 3.2rem;
+  gap: $space-md;
 }
 
 .carousel__thumb-img {
   border-radius: 0.8rem;
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3.2rem;
-}
-
-.header__left {
-  display: flex;
-  align-items: baseline;
-  gap: 0.8rem;
-}
-
-.header__right {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.header__logo {
-  width: 13.8rem;
-  height: 2rem;
-}
-
-.header__cart {
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
-.header__avatar {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.header img {
-  width: 100%;
-}
-
-/*# sourceMappingURL=main.css.map */

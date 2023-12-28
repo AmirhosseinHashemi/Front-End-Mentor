@@ -57,5 +57,84 @@
         </button>
       </div>
     </header>
+
+    <!-- Carousel -->
+    <div class="carousel" aria-label="carousel">
+      <!-- slider -->
+      <div class="carousel__slider" aria-label="slider">
+        <div class="carousel__slides-container">
+          <figure class="carousel__slide" data-slide="1">
+            <img src="./images/image-product-1.jpg" alt="shoe image1" />
+          </figure>
+
+          <figure class="carousel__slide" data-slide="2">
+            <img src="./images/image-product-2.jpg" alt="shoe image2" />
+          </figure>
+
+          <figure class="carousel__slide" data-slide="3">
+            <img src="./images/image-product-3.jpg" alt="shoe image3" />
+          </figure>
+
+          <figure class="carousel__slide" data-slide="4">
+            <img src="./images/image-product-4.jpg" alt="shoe image3" />
+          </figure>
+        </div>
+
+        <button
+          class="carousel__btn carousel__btn--previous"
+          data-go="previous"
+          type="button"
+        >
+          <img src="./images/icon-previous.svg" alt="previous" />
+        </button>
+
+        <button
+          class="carousel__btn carousel__btn--next"
+          data-go="next"
+          type="button"
+        >
+          <img src="./images/icon-next.svg" alt="next" />
+        </button>
+      </div>
+
+      <!-- thumbnail __ for desktop -->
+      <div class="carousel__thumbnail" aria-label="thumbnail">
+        <figure>
+          <img
+            class="carousel__thumb-img"
+            src="./images/image-product-1-thumbnail.jpg"
+            alt="thumbnail product 1"
+            data-thumbnail="1"
+          />
+        </figure>
+
+        <figure>
+          <img
+            class="carousel__thumb-img"
+            src="./images/image-product-2-thumbnail.jpg"
+            alt="thumbnail product 2"
+            data-thumbnail="2"
+          />
+        </figure>
+
+        <figure>
+          <img
+            class="carousel__thumb-img"
+            src="./images/image-product-3-thumbnail.jpg"
+            alt="thumbnail product 3"
+            data-thumbnail="3"
+          />
+        </figure>
+
+        <figure>
+          <img
+            class="carousel__thumb-img"
+            src="./images/image-product-4-thumbnail.jpg"
+            alt="thumbnail product 4"
+            data-thumbnail="4"
+          />
+        </figure>
+      </div>
+    </div>
   </body>
 </html>
