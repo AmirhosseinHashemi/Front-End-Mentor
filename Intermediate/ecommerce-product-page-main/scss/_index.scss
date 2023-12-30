@@ -1,3 +1,15 @@
+.overlay {
+  display: none;
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: $color-neutral-lightBox;
+}
+
+.overlay.block {
+  display: block;
+}
+
+// -------------------------------------------------------------- Header
 .header {
   display: flex;
   justify-content: space-between;

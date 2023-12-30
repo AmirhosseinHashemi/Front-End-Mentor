@@ -1,8 +1,47 @@
-.nav__close {
+.nav__btn {
+  position: relative;
+  width: 1.8rem;
+  height: 1.8rem;
+  z-index: 11;
+}
+
+.nav__close,
+.nav__hamburger {
   display: none;
 }
 
-.nav__btn {
-  width: 1.8rem;
-  height: 1.8rem;
+.active {
+  display: block;
+}
+
+// mobile menu
+.nav__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 70%;
+  visibility: hidden;
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: $space-sm;
+
+  padding-top: 9rem;
+  padding-left: 3.2rem;
+  background-color: $color-neutral-white;
+  transition: all 0.5s;
+}
+
+.nav__link {
+  font-size: $fs-md;
+  font-weight: $fw-bold;
+  color: $color-neutral-black;
+}
+
+.nav__list.open {
+  visibility: visible;
+  opacity: 1;
 }
