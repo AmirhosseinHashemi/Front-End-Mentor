@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
 section {
   padding: 3.2rem;
 }
@@ -56,8 +60,7 @@ a:visited {
 }
 
 .carousel__slide {
-  min-width: 37.5rem;
-  max-width: 100rem;
+  min-width: 100%;
   height: 35rem;
   transition: all 0.3s;
 }
@@ -65,7 +68,7 @@ a:visited {
 .carousel__slide > img {
   height: 100%;
   object-fit: cover;
-  object-position: bottom;
+  object-position: top;
 }
 
 .carousel__btn {
@@ -108,6 +111,26 @@ a:visited {
   border-radius: 0.8rem;
 }
 
+.btn--add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  margin-top: 0.8rem;
+  padding: 1.6rem 0;
+  border-radius: 1rem;
+  background-color: hsl(26, 100%, 55%);
+}
+
+.btn--add-to-cart svg path {
+  fill: hsl(0, 0%, 100%);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -144,6 +167,92 @@ a:visited {
 
 .header img {
   width: 100%;
+}
+
+.product__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.product__title,
+.product__off {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(220, 13%, 13%);
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+  margin: 1.6rem 0;
+}
+
+.product__caption {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: hsl(219, 9%, 45%);
+  line-height: 2.4rem;
+}
+
+.product__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.6rem 0;
+}
+
+.product__off {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 0;
+}
+
+.product__off > span {
+  font-size: 1.6rem;
+  color: hsl(26, 100%, 55%);
+  padding: 0 0.8rem;
+  border-radius: 0.8rem;
+  background-color: hsl(25, 100%, 94%);
+}
+
+.product__price > p:last-child {
+  position: relative;
+  font-size: 1.6rem;
+  color: hsl(220, 14%, 75%);
+  font-weight: 700;
+}
+
+.product__price > p:last-child::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 0.1rem;
+  background-color: hsl(220, 14%, 75%);
+}
+
+.product__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  background-color: hsl(223, 64%, 98%);
+}
+
+.product__counter > button {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(26, 100%, 55%);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.product__counter > span {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

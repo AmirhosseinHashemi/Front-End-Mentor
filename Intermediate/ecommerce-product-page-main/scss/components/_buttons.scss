@@ -1,0 +1,22 @@
+.btn--add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-unit;
+
+  font-size: $fs-md;
+  font-weight: $fw-bold;
+  letter-spacing: 0.1rem;
+  color: $color-neutral-white;
+
+  width: 100%;
+  margin-top: $space-unit;
+
+  padding: $space-sm 0;
+  border-radius: 1rem;
+  background-color: $color-primary-orange;
+}
+
+.btn--add-to-cart svg path {
+  fill: $color-neutral-white;
+}

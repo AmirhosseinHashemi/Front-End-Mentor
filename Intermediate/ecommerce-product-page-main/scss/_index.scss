@@ -36,3 +36,100 @@
 .header img {
   width: 100%;
 }
+
+// -------------------------------------------------------------- Product
+.product__label {
+  font-size: $fs-sm;
+  font-weight: $fw-bold;
+  color: $color-primary-orange;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.product__title,
+.product__off {
+  font-size: $fs-lg;
+  font-weight: $fw-bold;
+  color: $color-gray-1;
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+
+  margin: $space-sm 0;
+}
+
+.product__caption {
+  font-size: $fs-md;
+  font-weight: $fw-regular;
+  color: $color-gray-2;
+  line-height: 2.4rem;
+}
+
+.product__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: $space-sm 0;
+}
+
+// price after off
+.product__off {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  margin: 0;
+}
+
+// off label
+.product__off > span {
+  font-size: $fs-md;
+  color: $color-primary-orange;
+
+  padding: 0 $space-unit;
+  border-radius: 0.8rem;
+  background-color: $color-primary-paleOrange;
+}
+
+// price before off
+.product__price > p:last-child {
+  position: relative;
+  font-size: $fs-md;
+  color: $color-gray-3;
+  font-weight: $fw-bold;
+}
+
+.product__price > p:last-child::after {
+  position: absolute;
+  content: "";
+
+  top: 50%;
+  left: 0;
+  right: 0;
+
+  height: 0.1rem;
+  background-color: $color-gray-3;
+}
+
+.product__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: $space-sm;
+  border-radius: 0.8rem;
+  background-color: $color-gray-4;
+}
+
+.product__counter > button {
+  font-size: $fs-lg;
+  font-weight: $fw-bold;
+  color: $color-primary-orange;
+
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.product__counter > span {
+  font-size: $fs-md;
+  font-weight: $fw-bold;
+}
