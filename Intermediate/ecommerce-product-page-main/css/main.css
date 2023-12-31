@@ -78,6 +78,22 @@ a:visited {
   opacity: 1;
 }
 
+@media only screen and (min-width: 768px) {
+  .nav__btn {
+    display: none;
+  }
+  .nav__list {
+    position: relative;
+    flex-direction: row;
+    visibility: visible;
+    opacity: 1;
+    padding: 0;
+  }
+  .nav__link {
+    font-weight: 400;
+    color: hsl(219, 9%, 45%);
+  }
+}
 .carousel {
   position: relative;
   display: flex;
@@ -151,6 +167,11 @@ a:visited {
   border-radius: 0.8rem;
 }
 
+@media only screen and (min-width: 460px) {
+  .carousel__slide {
+    height: auto;
+  }
+}
 .btn--add-to-cart {
   display: flex;
   justify-content: center;
@@ -220,6 +241,13 @@ a:visited {
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .header__left {
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 3.2rem;
+  }
+}
 .product__label {
   font-size: 1.2rem;
   font-weight: 700;
@@ -304,6 +332,13 @@ a:visited {
 .product__counter > span {
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 600px) {
+  .product {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -75,3 +75,10 @@
 .carousel__thumb-img {
   border-radius: 0.8rem;
 }
+
+// width > 460px
+@media only screen and (min-width: 460px) {
+  .carousel__slide {
+    height: auto;
+  }
+}

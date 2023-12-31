@@ -45,3 +45,25 @@
   visibility: visible;
   opacity: 1;
 }
+
+// width > 768px
+@media only screen and (min-width: 768px) {
+  .nav__btn {
+    display: none;
+  }
+
+  .nav__list {
+    position: relative;
+    flex-direction: row;
+
+    visibility: visible;
+    opacity: 1;
+
+    padding: 0;
+  }
+
+  .nav__link {
+    font-weight: $fw-regular;
+    color: $color-gray-2;
+  }
+}
