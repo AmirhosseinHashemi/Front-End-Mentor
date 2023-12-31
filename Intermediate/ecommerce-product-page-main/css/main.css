@@ -164,12 +164,31 @@ a:visited {
 }
 
 .carousel__thumb-img {
+  cursor: pointer;
+}
+
+.carousel__thumb-img {
   border-radius: 0.8rem;
 }
 
 @media only screen and (min-width: 460px) {
   .carousel__slide {
     height: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .carousel {
+    max-width: 40rem;
+  }
+  .carousel__btn {
+    display: none;
+  }
+  .carousel__thumbnail {
+    display: flex;
+    gap: 1.6rem;
+  }
+  .carousel__slide > img {
+    border-radius: 0.8rem;
   }
 }
 .btn--add-to-cart {
@@ -203,6 +222,41 @@ a:visited {
   display: block;
 }
 
+@media only screen and (min-width: 768px) {
+  .line {
+    height: 0.1rem;
+    background: hsl(220, 14%, 75%);
+    margin: 1.6rem 3.2rem 0 3.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.2rem;
+    padding: 6.4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1024px) {
+  .wrapper {
+    align-items: center;
+    gap: 6.4rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1200px) {
+  .wrapper {
+    gap: 12rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    padding-right: 16rem;
+    padding-left: 16rem;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -242,10 +296,26 @@ a:visited {
 }
 
 @media only screen and (min-width: 768px) {
+  .header {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
   .header__left {
     align-items: center;
     flex-direction: row-reverse;
     gap: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header {
+    padding-right: 12rem;
+    padding-left: 12rem;
   }
 }
 .product__label {
@@ -338,6 +408,43 @@ a:visited {
   .product {
     max-width: 60rem;
     margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .product {
+    max-width: 42.5rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.6rem;
+  }
+  .product__label,
+  .product__title,
+  .product__caption,
+  .product__price {
+    grid-column: 1/-1;
+  }
+  .product__counter {
+    grid-column: 1/2;
+  }
+  .product__add {
+    grid-column: 2/-1;
+    margin-top: 0;
+  }
+  .product__price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin: 3.2rem 0;
+  }
+  .product__title {
+    font-size: 4rem;
+    line-height: 4.8rem;
   }
 }
 

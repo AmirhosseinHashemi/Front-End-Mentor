@@ -9,6 +9,49 @@
   display: block;
 }
 
+@media only screen and (min-width: 768px) {
+  .line {
+    height: 0.1rem;
+    background: $color-gray-3;
+    margin: $space-sm $space-md 0 $space-md;
+  }
+}
+
+// -------------------------------------------------------------- Wrapper
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: $space-md;
+    padding: $space-lg;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .wrapper {
+      align-items: center;
+      gap: $space-lg;
+    }
+  }
+
+  // width > 1200px
+  @media only screen and (min-width: 1200px) {
+    .wrapper {
+      gap: $space-xxl;
+      padding-right: $space-xxl;
+      padding-left: $space-xxl;
+    }
+  }
+}
+
+// width > 1440px
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    padding-right: $space-xxxl;
+    padding-left: $space-xxxl;
+  }
+}
+
 // -------------------------------------------------------------- Header
 .header {
   display: flex;
@@ -51,10 +94,31 @@
 
 // width > 768px
 @media only screen and (min-width: 768px) {
+  .header {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+
   .header__left {
     align-items: center;
     flex-direction: row-reverse;
     gap: $space-md;
+  }
+}
+
+// width > 1200px
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding-right: $space-xl;
+    padding-left: $space-xl;
+  }
+}
+
+// width > 1440px
+@media only screen and (min-width: 1440px) {
+  .header {
+    padding-right: $space-xxl;
+    padding-left: $space-xxl;
   }
 }
 
@@ -160,5 +224,52 @@
   .product {
     max-width: 60rem;
     margin: 0 auto;
+  }
+}
+
+// width > 768px
+@media only screen and (min-width: 768px) {
+  .product {
+    max-width: 42.5rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// width > 1024
+@media only screen and (min-width: 1024px) {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: $space-sm;
+  }
+
+  .product__label,
+  .product__title,
+  .product__caption,
+  .product__price {
+    grid-column: 1 / -1;
+  }
+
+  .product__counter {
+    grid-column: 1 / 2;
+  }
+
+  .product__add {
+    grid-column: 2 / -1;
+    margin-top: 0;
+  }
+
+  .product__price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-unit;
+
+    margin: $space-md 0;
+  }
+
+  .product__title {
+    font-size: $fs-xxl;
+    line-height: 4.8rem;
   }
 }

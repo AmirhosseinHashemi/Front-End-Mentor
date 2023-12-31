@@ -73,6 +73,10 @@
 }
 
 .carousel__thumb-img {
+  cursor: pointer;
+}
+
+.carousel__thumb-img {
   border-radius: 0.8rem;
 }
 
@@ -80,5 +84,25 @@
 @media only screen and (min-width: 460px) {
   .carousel__slide {
     height: auto;
+  }
+}
+
+// width > 768px
+@media only screen and (min-width: 768px) {
+  .carousel {
+    max-width: 40rem;
+  }
+
+  .carousel__btn {
+    display: none;
+  }
+
+  .carousel__thumbnail {
+    display: flex;
+    gap: $space-sm;
+  }
+
+  .carousel__slide > img {
+    border-radius: 0.8rem;
   }
 }
