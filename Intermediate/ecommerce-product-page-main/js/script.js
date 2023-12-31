@@ -6,8 +6,9 @@ const slides = document.querySelectorAll(".carousel__slide");
 const navBtn = document.querySelector(".nav__btn");
 const navIcon = document.querySelectorAll(".nav__btn img");
 const navMenu = document.querySelector(".nav__list");
-// const hamIcon = document.querySelector('.nav__hamburger');
-// const closeIcon = document.querySelector('.nav__close');
+
+const counterBtn = document.querySelectorAll(".product__counter button");
+const counterNum = document.querySelector(".product__counter span");
 
 // carousel
 const maxSlide = slides.length - 1;
@@ -51,3 +52,16 @@ navBtn.addEventListener("click", function () {
   navMenu.classList.toggle("open");
   darkOverlay.classList.toggle("block");
 });
+
+// counter
+counterBtn.forEach((btn) =>
+  btn.addEventListener("click", function (e) {
+    if (e.target.dataset.counter === "increase") {
+      +counterNum.innerText++;
+    }
+
+    if (e.target.dataset.counter === "decrease" && +counterNum.innerText > 0) {
+      +counterNum.innerText--;
+    }
+  })
+);
