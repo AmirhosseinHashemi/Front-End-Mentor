@@ -13,7 +13,7 @@
   .line {
     height: 0.1rem;
     background: $color-gray-3;
-    margin: $space-sm $space-md 0 $space-md;
+    margin: 0 $space-md;
   }
 }
 
@@ -83,9 +83,18 @@
   height: 2.4rem;
 }
 
+.header__cart:focus svg path {
+  fill: $color-neutral-black;
+}
+
 .header__avatar {
   width: 2.4rem;
   height: 2.4rem;
+}
+
+.header__avatar:focus {
+  border: 0.2rem solid $color-primary-orange;
+  border-radius: 50%;
 }
 
 .header img {
@@ -103,6 +112,11 @@
     align-items: center;
     flex-direction: row-reverse;
     gap: $space-md;
+  }
+
+  .header__avatar {
+    width: 3.4rem;
+    height: 3.4rem;
   }
 }
 
@@ -212,11 +226,26 @@
 
   width: 2.4rem;
   height: 2.4rem;
+  transition: all 0.3s;
+}
+
+.product__counter > button:hover {
+  opacity: 0.5;
 }
 
 .product__counter > span {
   font-size: $fs-md;
   font-weight: $fw-bold;
+}
+
+.product__add {
+  transition: all 0.3s;
+  box-shadow: 0 0.4rem 1rem 0 $color-gray-3;
+}
+
+.product__add:hover {
+  opacity: 0.5;
+  box-shadow: none;
 }
 
 // width > 600px

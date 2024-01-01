@@ -25,6 +25,7 @@
   height: 35rem;
 
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .carousel__slide > img {
@@ -67,17 +68,31 @@
 }
 
 .carousel__thumbnail {
-  //   display: flex;
   display: none;
   gap: $space-md;
 }
 
-.carousel__thumb-img {
-  cursor: pointer;
+.carousel__thumbnail button {
+  width: 8.5rem;
+  height: 8.5rem;
+}
+
+.carousel__thumbnail button:focus {
+  .carousel__thumb-img {
+    opacity: 0.4;
+  }
+  border: 0.3rem solid $color-primary-orange;
+  border-radius: 0.8rem;
 }
 
 .carousel__thumb-img {
+  transition: all 0.3s;
+  cursor: pointer;
   border-radius: 0.8rem;
+}
+
+.carousel__thumb-img:hover {
+  opacity: 0.6;
 }
 
 // width > 460px
