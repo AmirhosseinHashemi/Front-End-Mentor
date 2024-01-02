@@ -54,14 +54,14 @@ navBtn.addEventListener("click", function () {
 });
 
 // counter
-counterBtn.forEach((btn) =>
-  btn.addEventListener("click", function (e) {
-    if (e.target.dataset.counter === "increase") {
-      +counterNum.innerText++;
-    }
+// counterBtn.forEach((btn) =>
+//   btn.addEventListener("click", function (e) {
+//     if (e.target.dataset.counter === "increase") {
+//       +counterNum.innerText++;
+//     }
 
-    if (e.target.dataset.counter === "decrease" && +counterNum.innerText > 0) {
-      +counterNum.innerText--;
-    }
-  })
-);
+//     if (e.target.dataset.counter === "decrease" && +counterNum.innerText > 0) {
+//       +counterNum.innerText--;
+//     }
+//   })
+// );
