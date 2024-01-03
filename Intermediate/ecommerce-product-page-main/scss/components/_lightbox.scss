@@ -1,0 +1,56 @@
+.lightbox {
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 111;
+  background-color: $color-neutral-lightBox;
+
+  display: none;
+  //   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox .carousel__slider {
+  overflow: visible;
+}
+
+.lightbox .carousel__thumbnail {
+  justify-content: center;
+}
+
+.lightbox .carousel__thumbnail > button {
+  width: 7rem;
+  height: 7rem;
+}
+
+.lightbox .carousel__btn {
+  display: flex;
+}
+
+.lightbox .carousel__btn--next {
+  transform: translate(50%, -50%);
+}
+
+.lightbox .carousel__btn--previous {
+  transform: translate(-50%, -50%);
+}
+
+.lightbox .carousel__thumbnail button {
+  background: $color-neutral-white;
+  border-radius: 0.8rem;
+}
+
+.close {
+  display: block;
+  margin: 0 0 $space-md auto;
+}
+
+.close-icon path {
+  transition: all 0.3s;
+  fill: $color-neutral-white;
+}
+
+.close-icon:hover path {
+  fill: $color-primary-orange;
+}

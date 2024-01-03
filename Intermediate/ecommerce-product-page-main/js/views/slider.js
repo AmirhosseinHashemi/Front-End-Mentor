@@ -1,5 +1,5 @@
 class SliderView {
-  _parent = document.querySelector(".carousel");
+  _parent = document.querySelector(".wrapper .carousel");
   _data;
   _currentSlide = 1;
   _maxSlide = 4;
@@ -44,7 +44,7 @@ class SliderView {
     <!-- slider -->
     <div class="carousel__slider" aria-label="slider">
       <div class="carousel__slides-container">
-        <figure class="carousel__slide" data-slide='${this._currentSlide}'>
+        <figure class="carousel__slide" data-lightbox="true">
           <img src="./images/image-product-${this._currentSlide}.jpg" alt="shoe image${this._currentSlide}" />
         </figure>
       </div>

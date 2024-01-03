@@ -69,7 +69,6 @@
 
 .carousel__thumbnail {
   display: none;
-  gap: $space-md;
 }
 
 .carousel__thumbnail button {
@@ -114,7 +113,7 @@
 
   .carousel__thumbnail {
     display: flex;
-    gap: $space-sm;
+    gap: 2rem;
   }
 
   .carousel__slide > img {

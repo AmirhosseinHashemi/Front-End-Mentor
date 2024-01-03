@@ -102,20 +102,8 @@
         <!-- slider -->
         <div class="carousel__slider" aria-label="slider">
           <div class="carousel__slides-container">
-            <figure class="carousel__slide" data-slide="1">
+            <figure class="carousel__slide" data-lightbox="true">
               <img src="./images/image-product-1.jpg" alt="shoe image1" />
-            </figure>
-
-            <figure class="carousel__slide" data-slide="2">
-              <img src="./images/image-product-2.jpg" alt="shoe image2" />
-            </figure>
-
-            <figure class="carousel__slide" data-slide="3">
-              <img src="./images/image-product-3.jpg" alt="shoe image3" />
-            </figure>
-
-            <figure class="carousel__slide" data-slide="4">
-              <img src="./images/image-product-4.jpg" alt="shoe image3" />
             </figure>
           </div>
 
@@ -218,6 +206,92 @@
         </button>
       </section>
     </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" aria-label="lightbox">
+      <div class="content">
+        <button type="button" class="close">
+          <svg
+            class="close-icon"
+            aria-label="close icon"
+            width="14"
+            height="15"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#69707D"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <div class="carousel" aria-label="carousel">
+          <!-- slider -->
+          <div class="carousel__slider" aria-label="slider">
+            <div class="carousel__slides-container">
+              <figure class="carousel__slide">
+                <img src="./images/image-product-1.jpg" alt="shoe image1" />
+              </figure>
+            </div>
+
+            <button
+              class="carousel__btn carousel__btn--previous"
+              data-go="previous"
+              type="button"
+            >
+              <img src="./images/icon-previous.svg" alt="previous" />
+            </button>
+
+            <button
+              class="carousel__btn carousel__btn--next"
+              data-go="next"
+              type="button"
+            >
+              <img src="./images/icon-next.svg" alt="next" />
+            </button>
+          </div>
+
+          <!-- thumbnail __ for desktop -->
+          <div class="carousel__thumbnail" aria-label="thumbnail">
+            <button type="button">
+              <img
+                class="carousel__thumb-img"
+                src="./images/image-product-1-thumbnail.jpg"
+                alt="thumbnail product 1"
+                data-thumbnail="1"
+              />
+            </button>
+
+            <button type="button">
+              <img
+                class="carousel__thumb-img"
+                src="./images/image-product-2-thumbnail.jpg"
+                alt="thumbnail product 2"
+                data-thumbnail="2"
+              />
+            </button>
+
+            <button type="button">
+              <img
+                class="carousel__thumb-img"
+                src="./images/image-product-3-thumbnail.jpg"
+                alt="thumbnail product 3"
+                data-thumbnail="3"
+              />
+            </button>
+
+            <button type="button">
+              <img
+                class="carousel__thumb-img"
+                src="./images/image-product-4-thumbnail.jpg"
+                alt="thumbnail product 4"
+                data-thumbnail="4"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="overlay"></div>
   </body>

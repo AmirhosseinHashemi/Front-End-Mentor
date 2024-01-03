@@ -178,7 +178,6 @@ a:visited {
 
 .carousel__thumbnail {
   display: none;
-  gap: 3.2rem;
 }
 
 .carousel__thumbnail button {
@@ -218,7 +217,7 @@ a:visited {
   }
   .carousel__thumbnail {
     display: flex;
-    gap: 1.6rem;
+    gap: 2rem;
   }
   .carousel__slide > img {
     border-radius: 0.8rem;
@@ -242,6 +241,61 @@ a:visited {
 
 .btn--add-to-cart svg path {
   fill: hsl(0, 0%, 100%);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 111;
+  background-color: hsla(0, 0%, 0%, 0.75);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox .carousel__slider {
+  overflow: visible;
+}
+
+.lightbox .carousel__thumbnail {
+  justify-content: center;
+}
+
+.lightbox .carousel__thumbnail > button {
+  width: 7rem;
+  height: 7rem;
+}
+
+.lightbox .carousel__btn {
+  display: flex;
+}
+
+.lightbox .carousel__btn--next {
+  transform: translate(50%, -50%);
+}
+
+.lightbox .carousel__btn--previous {
+  transform: translate(-50%, -50%);
+}
+
+.lightbox .carousel__thumbnail button {
+  background: hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+}
+
+.close {
+  display: block;
+  margin: 0 0 3.2rem auto;
+}
+
+.close-icon path {
+  transition: all 0.3s;
+  fill: hsl(0, 0%, 100%);
+}
+
+.close-icon:hover path {
+  fill: hsl(26, 100%, 55%);
 }
 
 .overlay {
