@@ -185,14 +185,6 @@ a:visited {
   height: 8.5rem;
 }
 
-.carousel__thumbnail button:focus {
-  border: 0.3rem solid hsl(26, 100%, 55%);
-  border-radius: 0.8rem;
-}
-.carousel__thumbnail button:focus .carousel__thumb-img {
-  opacity: 0.4;
-}
-
 .carousel__thumb-img {
   transition: all 0.3s;
   cursor: pointer;
@@ -296,6 +288,15 @@ a:visited {
 
 .close-icon:hover path {
   fill: hsl(26, 100%, 55%);
+}
+
+.active-btn {
+  border: 0.3rem solid hsl(26, 100%, 55%);
+  border-radius: 0.8rem;
+}
+
+.active-btn > img {
+  opacity: 0.5;
 }
 
 .overlay {

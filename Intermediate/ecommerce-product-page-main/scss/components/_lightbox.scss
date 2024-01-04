@@ -54,3 +54,12 @@
 .close-icon:hover path {
   fill: $color-primary-orange;
 }
+
+.active-btn {
+  border: 0.3rem solid $color-primary-orange;
+  border-radius: 0.8rem;
+}
+
+.active-btn > img {
+  opacity: 0.5;
+}
