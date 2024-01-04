@@ -246,7 +246,7 @@ class LightboxView extends SliderView {
   }
 }
 
-export const Slider = new SliderView();
-export const Lightbox = new LightboxView();
+export const slider = new SliderView();
+export const lightbox = new LightboxView();
 
 // export default new SliderView();
