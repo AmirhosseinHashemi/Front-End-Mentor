@@ -50,6 +50,7 @@ const addControl = function (info) {
   if (info["number"] < 1) return;
 
   model.addData(info);
+  counter.reset();
 };
 
 const init = function () {

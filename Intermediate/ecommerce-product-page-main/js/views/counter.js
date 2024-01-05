@@ -10,6 +10,11 @@ class CounterView {
     this._parent.insertAdjacentHTML("afterbegin", markup);
   }
 
+  reset() {
+    this._number = 0;
+    this._parent.querySelector("span").innerText = 0;
+  }
+
   _clear() {
     this._parent.innerHTML = "";
   }
