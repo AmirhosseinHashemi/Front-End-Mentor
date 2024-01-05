@@ -317,6 +317,37 @@ a:visited {
     margin: 0 3.2rem;
   }
 }
+.message {
+  position: fixed;
+  top: 10%;
+  right: 1%;
+  z-index: 111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23rem;
+  height: 7rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-left: 0.5rem solid hsl(26, 100%, 55%);
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0rem 0rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.message__text span {
+  font-size: 2.4rem;
+  color: hsl(26, 100%, 55%);
+  margin-left: 0.8rem;
+}
+
 @media only screen and (min-width: 768px) {
   .wrapper {
     display: flex;

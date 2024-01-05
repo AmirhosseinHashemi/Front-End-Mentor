@@ -1,5 +1,7 @@
 import counter from "./views/counter.js";
 import { slider, lightbox } from "./views/slider.js";
+import addToCart from "./views/addBtn.js";
+import * as model from "./model.js";
 
 // handle counter
 const countControl = function (go) {
@@ -43,6 +45,13 @@ const lightboxCloseControl = function () {
   lightbox.close();
 };
 
+// handle add info
+const addControl = function (info) {
+  if (info["number"] < 1) return;
+
+  model.addData(info);
+};
+
 const init = function () {
   counter.addHandlerClick(countControl);
   slider.addHandlerClick(sliderControl);
@@ -51,5 +60,6 @@ const init = function () {
   lightbox.addHandlerClick(sliderLightboxControl);
   lightbox.addhandlerThumb(thumbLightboxControl);
   lightbox.addhandlerClose(lightboxCloseControl);
+  addToCart.addHandlerClick(addControl);
 };
 init();
