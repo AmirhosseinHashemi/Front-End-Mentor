@@ -21,7 +21,9 @@ Users should be able to:
 
 ### Screenshot 📷
 
-![](./screenshot.jpg)
+#### 💻 desktop(1440px)
+
+![](./images/screenshot.png)
 
 ## My process 🚀
 
@@ -37,5 +39,6 @@ Users should be able to:
 
 ## Author 🧑
 
+- Linkedin - [@AmirhoseinHashemi](https://linkedin.com/in/amirhoseinhashemi)
+- X (Twitter) - [@\_AmirHashemi](https://twitter.com/_AmirHashemi)
 - Frontend Mentor - [@AmirhosseinHashemi](https://www.frontendmentor.io/profile/AmirhosseinHashemi)
-- Twitter - [@AmirHashemi](https://twitter.com/_AmirHashemi)
