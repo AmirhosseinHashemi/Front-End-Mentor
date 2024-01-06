@@ -10,7 +10,7 @@ class AddToCart {
       const info = {
         name: this.querySelector(".product__title").innerText,
         price: this.querySelector(".product__off").firstChild.nodeValue.trim(),
-        number: this.querySelector(".product__counter span").innerText,
+        number: +this.querySelector(".product__counter span").innerText,
       };
       handler(info);
     });

@@ -2,6 +2,7 @@ import counter from "./views/counter.js";
 import { slider, lightbox } from "./views/slider.js";
 import addToCart from "./views/addBtn.js";
 import * as model from "./model.js";
+import cart from "./views/cart.js";
 
 // handle counter
 const countControl = function (go) {
@@ -51,6 +52,7 @@ const addControl = function (info) {
 
   model.addData(info);
   counter.reset();
+  cart.render(model.state.cart);
 };
 
 const init = function () {

@@ -377,6 +377,7 @@ a:visited {
   }
 }
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -401,12 +402,28 @@ a:visited {
 }
 
 .header__cart {
+  position: relative;
   width: 2.4rem;
   height: 2.4rem;
 }
 
 .header__cart:focus svg path {
   fill: hsl(0, 0%, 0%);
+}
+
+.header__inventory {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.36rem;
+  width: 1.8rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  background-color: hsl(26, 100%, 55%);
 }
 
 .header__avatar {
