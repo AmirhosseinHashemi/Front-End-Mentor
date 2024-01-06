@@ -55,6 +55,18 @@ const addControl = function (info) {
   cart.render(model.state.cart);
 };
 
+// handle showing cart list
+const cartControl = function () {
+  cart.toggleCart();
+  cart.render(model.state.cart);
+};
+
+// handle delete item from cart
+const deleteControl = function (index) {
+  model.deleteData(index);
+  cart.render(model.state.cart);
+};
+
 const init = function () {
   counter.addHandlerClick(countControl);
   slider.addHandlerClick(sliderControl);
@@ -64,5 +76,7 @@ const init = function () {
   lightbox.addhandlerThumb(thumbLightboxControl);
   lightbox.addhandlerClose(lightboxCloseControl);
   addToCart.addHandlerClick(addControl);
+  cart.addHandlerClick(cartControl);
+  cart.addHandlerDelete(deleteControl);
 };
 init();

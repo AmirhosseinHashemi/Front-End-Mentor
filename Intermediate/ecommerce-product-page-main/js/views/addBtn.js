@@ -9,7 +9,9 @@ class AddToCart {
 
       const info = {
         name: this.querySelector(".product__title").innerText,
-        price: this.querySelector(".product__off").firstChild.nodeValue.trim(),
+        price: +this.querySelector(".product__off")
+          .firstChild.nodeValue.trim()
+          .slice(1),
         number: +this.querySelector(".product__counter span").innerText,
       };
       handler(info);
