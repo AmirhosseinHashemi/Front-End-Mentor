@@ -3,6 +3,7 @@ import { slider, lightbox } from "./views/slider.js";
 import addToCart from "./views/addBtn.js";
 import * as model from "./model.js";
 import cart from "./views/cart.js";
+import menu from "./views/mobileMenu.js";
 
 // handle counter
 const countControl = function (go) {
@@ -67,6 +68,12 @@ const deleteControl = function (index) {
   cart.render(model.state.cart);
 };
 
+// handle opening menu in mobile
+const menuControl = function () {
+  menu.toggleMenu();
+  menu.render("");
+};
+
 const init = function () {
   counter.addHandlerClick(countControl);
   slider.addHandlerClick(sliderControl);
@@ -78,5 +85,6 @@ const init = function () {
   addToCart.addHandlerClick(addControl);
   cart.addHandlerClick(cartControl);
   cart.addHandlerDelete(deleteControl);
+  menu.addHandlerClick(menuControl);
 };
 init();
