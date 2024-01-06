@@ -85,11 +85,6 @@ a:visited {
   transition: all 0.3s;
 }
 
-.nav__link:hover::after,
-.nav__link:focus::after {
-  right: 0;
-}
-
 .nav__list.open {
   visibility: visible;
   opacity: 1;
@@ -110,6 +105,10 @@ a:visited {
   .nav__link {
     font-weight: 400;
     color: hsl(219, 9%, 45%);
+  }
+  .nav__link:hover::after,
+  .nav__link:focus::after {
+    right: 0;
   }
 }
 .carousel {
@@ -653,11 +652,6 @@ a:visited {
   box-shadow: 0 0.4rem 1rem 0 hsl(220, 14%, 75%);
 }
 
-.product__add:hover {
-  opacity: 0.5;
-  box-shadow: none;
-}
-
 @media only screen and (min-width: 600px) {
   .product {
     max-width: 60rem;
@@ -676,6 +670,10 @@ a:visited {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.6rem;
+  }
+  .product__add:hover {
+    opacity: 0.5;
+    box-shadow: none;
   }
   .product__label,
   .product__title,

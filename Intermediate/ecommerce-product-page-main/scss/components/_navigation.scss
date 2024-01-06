@@ -53,11 +53,6 @@
   transition: all 0.3s;
 }
 
-.nav__link:hover::after,
-.nav__link:focus::after {
-  right: 0;
-}
-
 .nav__list.open {
   visibility: visible;
   opacity: 1;
@@ -83,5 +78,10 @@
   .nav__link {
     font-weight: $fw-regular;
     color: $color-gray-2;
+  }
+
+  .nav__link:hover::after,
+  .nav__link:focus::after {
+    right: 0;
   }
 }
