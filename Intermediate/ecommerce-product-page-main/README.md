@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links 🔗
 
-- Live Site URL: [E-commerce product page](https://your-live-site-url.com)
+- Live Site URL: [E-commerce product page](https://fem-ecommerceproduct.vercel.app/)
 
 ### Screenshot 📷
 
@@ -37,7 +37,9 @@ Users should be able to:
 - Mobile-first workflow
 - JS
 
-## Author 🧑
+- MVC architecture
+
+## Social media 📱
 
 - Linkedin - [@AmirhoseinHashemi](https://linkedin.com/in/amirhoseinhashemi)
 - X (Twitter) - [@\_AmirHashemi](https://twitter.com/_AmirHashemi)
