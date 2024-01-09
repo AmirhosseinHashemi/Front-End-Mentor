@@ -1,3 +1,159 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  max-width: 37.5rem;
+  height: 15.6rem;
+  margin: 0 auto;
+  background: hsl(180, 8%, 52%) url(../images/bg-header-mobile.svg) no-repeat center;
+}
+
+.wrapper {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+  background-color: hsl(180, 52%, 96%);
+  padding: 4.8rem 1.6rem;
+}
+
+.line {
+  height: 0.1rem;
+  background-color: hsl(180, 8%, 52%);
+  opacity: 0.3;
+  margin: 1.6rem 0;
+}
+
+.job {
+  position: relative;
+  font-size: 1.5rem;
+  max-width: 32rem;
+  padding: 3.2rem 1.6rem 1.6rem 1.6rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.125);
+}
+
+.job.feature {
+  border-left: 0.4rem solid hsl(180, 29%, 50%);
+}
+
+.job__badges {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-left: 1.6rem;
+}
+
+.job__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: hsl(180, 52%, 96%);
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+}
+
+.job__badge--featured {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.job__badge--new {
+  background-color: hsl(180, 29%, 50%);
+}
+
+.job__info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1.2rem;
+}
+
+.job__position,
+.job__bottom {
+  grid-column: 1/-1;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: -0.1rem;
+}
+
+.job__company {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: hsl(180, 8%, 52%);
+}
+
+.job__position {
+  color: hsl(180, 14%, 20%);
+}
+
+.job__posted,
+.job__contract,
+.job__location {
+  position: relative;
+  font-weight: 500;
+  color: hsl(180, 8%, 52%);
+}
+
+.job__contract::before,
+.job__location::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: hsl(180, 8%, 52%);
+  border-radius: 50%;
+}
+
+.job__bottom {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.job__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, -50%);
+  width: 5rem;
+  height: 5rem;
+}
+
+.job__btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.job__btn {
+  font-weight: 700;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  color: hsl(180, 8%, 52%);
+  background-color: hsl(180, 31%, 95%);
+}
 
 /*# sourceMappingURL=main.css.map */
