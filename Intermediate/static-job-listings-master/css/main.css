@@ -156,6 +156,11 @@ body {
   background-color: hsl(180, 31%, 95%);
 }
 
+.job__btn:active {
+  color: hsl(180, 52%, 96%);
+  background-color: hsl(180, 29%, 50%);
+}
+
 @media only screen and (min-width: 1440px) {
   .header {
     max-width: 144rem;
@@ -195,6 +200,14 @@ body {
   }
   .job__btn {
     cursor: pointer;
+  }
+  .job__btn:hover {
+    color: hsl(180, 52%, 96%);
+    background-color: hsl(180, 29%, 50%);
+  }
+  .job__position:hover {
+    cursor: pointer;
+    color: hsl(180, 29%, 50%);
   }
 }
 

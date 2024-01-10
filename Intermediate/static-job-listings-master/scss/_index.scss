@@ -168,6 +168,11 @@ body {
   background-color: $color-neutral-lightGrayishCyan-2;
 }
 
+.job__btn:active {
+  color: $color-neutral-lightGrayishCyan-1;
+  background-color: $color-primary-desaturatedDarkCyan;
+}
+
 @media only screen and (min-width: 1440px) {
   .header {
     max-width: 144rem;
@@ -217,5 +222,15 @@ body {
 
   .job__btn {
     cursor: pointer;
+  }
+
+  .job__btn:hover {
+    color: $color-neutral-lightGrayishCyan-1;
+    background-color: $color-primary-desaturatedDarkCyan;
+  }
+
+  .job__position:hover {
+    cursor: pointer;
+    color: $color-primary-desaturatedDarkCyan;
   }
 }
