@@ -49,22 +49,23 @@ body {
   font-size: 1.5rem;
 
   max-width: 32rem;
+  width: 100%;
   padding: 3.2rem 1.6rem 1.6rem 1.6rem;
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: 0.5rem 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.125);
 }
 
-.job.feature {
+.job.featured {
   border-left: 0.4rem solid $color-primary-desaturatedDarkCyan;
 }
 
-.job__badges {
+.job__title {
+  grid-column: 1 / -1;
+
   display: flex;
   align-items: center;
   gap: 0.8rem;
-
-  margin-left: 1.6rem;
 }
 
 .job__badge {
@@ -102,11 +103,9 @@ body {
 }
 
 .job__company {
-  display: flex;
-  align-items: center;
-
   font-size: 1.5rem;
   color: $color-neutral-darkGrayishCyan;
+  margin-right: 1.6rem;
 }
 
 .job__position {
@@ -156,7 +155,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 1.6rem;
 }
 
 .job__btn {
@@ -199,6 +198,10 @@ body {
   .job__info,
   .job__btns {
     flex-basis: 50%;
+  }
+
+  .job__btns {
+    justify-content: flex-end;
   }
 
   .job__company {
