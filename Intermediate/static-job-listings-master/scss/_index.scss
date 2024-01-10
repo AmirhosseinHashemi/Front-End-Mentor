@@ -24,6 +24,7 @@ body {
 }
 
 .wrapper {
+  position: relative;
   max-width: 37.5rem;
   margin: 0 auto;
 
@@ -33,7 +34,7 @@ body {
   gap: 4.8rem;
 
   background-color: $color-neutral-lightGrayishCyan-1;
-  padding: 4.8rem 1.6rem;
+  padding: 8rem 1.6rem;
 }
 
 .line {
@@ -173,6 +174,90 @@ body {
   background-color: $color-primary-desaturatedDarkCyan;
 }
 
+.filter {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 32rem;
+  width: 100%;
+
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 1.5rem 0 rgba(0, 0, 0, 0.125);
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.filter.visible {
+  opacity: 1;
+}
+
+.filter__container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.filter__selected {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: $fw-bold;
+
+  color: $color-neutral-darkGrayishCyan;
+  background-color: $color-neutral-lightGrayishCyan-2;
+}
+
+.filter__delete {
+  border: none;
+  background: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  background-color: $color-primary-desaturatedDarkCyan;
+  cursor: pointer;
+}
+
+.filter__clear {
+  background: none;
+  border: none;
+
+  width: 3rem;
+  height: 3rem;
+  line-height: 2rem;
+  padding: 0.5rem 0;
+
+  font-weight: $fw-bold;
+  color: $color-primary-desaturatedDarkCyan;
+
+  cursor: pointer;
+}
+
+.filter__btn {
+  background: none;
+  border: none;
+}
+
+.filter__text {
+  margin: 0 0.8rem;
+}
+
 @media only screen and (min-width: 1440px) {
   .header {
     max-width: 144rem;
@@ -200,9 +285,12 @@ body {
     align-items: center;
   }
 
-  .job__info,
+  .job__info {
+    flex-basis: 25%;
+  }
+
   .job__btns {
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
 
   .job__btns {
@@ -232,5 +320,18 @@ body {
   .job__position:hover {
     cursor: pointer;
     color: $color-primary-desaturatedDarkCyan;
+  }
+
+  .filter {
+    min-width: 120rem;
+    padding: 3.2rem;
+  }
+
+  .filter__clear:hover {
+    border-bottom: 0.1rem solid $color-primary-desaturatedDarkCyan;
+  }
+
+  .filter__delete:hover {
+    background-color: $color-neutral-veryDarkGrayishCyan;
   }
 }
