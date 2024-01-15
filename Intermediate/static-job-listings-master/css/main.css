@@ -16,6 +16,7 @@ body {
 }
 
 .header {
+  position: relative;
   max-width: 37.5rem;
   height: 15.6rem;
   margin: 0 auto;
@@ -164,8 +165,10 @@ body {
 
 .filter {
   position: absolute;
-  top: 0;
-  transform: translateY(-50%);
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: space-between;
